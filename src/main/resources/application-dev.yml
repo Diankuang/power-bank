@@ -1,0 +1,24 @@
+server:
+  port: 9002
+  servlet:
+    context-path: /power-bank
+spring:
+  application:
+    name: power-bank
+  redis:
+        database: 1
+        password: 1234
+        port: 6379
+        host: 192.168.1.208
+        timeout: 5000
+  datasource:
+      url: jdbc:mysql://192.168.1.208:3306/pegasi?useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: 1234
+      driver-class-name: com.mysql.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
