@@ -1,4 +1,4 @@
-package com.power.bank.common.config;
+package com.power.bank.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;

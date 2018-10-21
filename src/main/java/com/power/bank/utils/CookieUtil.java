@@ -1,4 +1,4 @@
-package com.power.bank.common.utils;
+package com.power.bank.utils;
 
 import org.springframework.stereotype.Component;
 

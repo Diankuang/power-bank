@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.power.bank.dao.TUserMapper">
+  <resultMap id="BaseResultMap" type="com.power.bank.entity.TUser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="first_name" jdbcType="VARCHAR" property="firstName" />
+    <result column="last_name" jdbcType="VARCHAR" property="lastName" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="company" jdbcType="VARCHAR" property="company" />
+    <result column="phone_number" jdbcType="VARCHAR" property="phoneNumber" />
+    <result column="fax" jdbcType="VARCHAR" property="fax" />
+    <result column="country" jdbcType="VARCHAR" property="country" />
+    <result column="postal_code" jdbcType="VARCHAR" property="postalCode" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="street_address" jdbcType="VARCHAR" property="streetAddress" />
+    <result column="user_class" jdbcType="INTEGER" property="userClass" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="gender" jdbcType="INTEGER" property="gender" />
+    <result column="height" jdbcType="DOUBLE" property="height" />
+    <result column="create_time" jdbcType="DATE" property="createTime" />
+    <result column="updatet_time" jdbcType="DATE" property="updatetTime" />
+    <result column="weight" jdbcType="DOUBLE" property="weight" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="subscribe" jdbcType="VARCHAR" property="subscribe" />
+  </resultMap>
+</mapper>

@@ -1,4 +1,4 @@
-package com.power.bank.common.config;
+package com.power.bank.config;
 
 
 import org.springframework.context.annotation.Configuration;

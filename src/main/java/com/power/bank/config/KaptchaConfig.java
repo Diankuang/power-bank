@@ -1,4 +1,4 @@
-package com.power.bank.common.config;
+package com.power.bank.config;
 
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;

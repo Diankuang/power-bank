@@ -1,4 +1,4 @@
-package com.power.bank.common.utils;
+package com.power.bank.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,7 +29,7 @@ public class SessionUtil {
 
     public void addAttribute(String key,Object obj) {
         logger.info("======================set key={}",key);
-        redisUtil.set(key,obj,60*60*24);
+        redisUtil.set(key,obj,60*60*1);
     }
 
     public void addAttribute(String key,Object obj,Integer second) {
