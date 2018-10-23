@@ -53,7 +53,7 @@
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table tableName="t_product"></table>
+        <table tableName="t_power_product"></table>
 
     </context>
 </generatorConfiguration>

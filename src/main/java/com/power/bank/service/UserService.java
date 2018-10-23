@@ -20,9 +20,6 @@ import java.util.Date;
 public class UserService {
 
     @Autowired
-    KeyCheckService keyCheckService;
-
-    @Autowired
     TUserMapper tUserMapper;
 
     @Autowired
@@ -30,7 +27,7 @@ public class UserService {
 
     public String getUserId(){
         String uuid = ToolsUtil.getUUID();
-        if(keyCheckService.checkUserId(uuid)){
+        if(tUserMapper.selectByPrimaryKey(uuid) != null){
             return getUserId();
         }else {
             return uuid;

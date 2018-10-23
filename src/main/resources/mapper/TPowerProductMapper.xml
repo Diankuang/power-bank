@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.power.bank.dao.TProductMapper">
-  <resultMap id="BaseResultMap" type="com.power.bank.entity.TProduct">
+<mapper namespace="com.power.bank.dao.TPowerProductMapper">
+  <resultMap id="BaseResultMap" type="com.power.bank.entity.TPowerProduct">
     <!--
       WARNING - @mbg.generated
     -->
@@ -24,7 +24,7 @@
     <result column="update_time" jdbcType="DATE" property="updateTime" />
   </resultMap>
 
-  <select id="queryProductList" resultMap="BaseResultMap">
-    select * from t_product where type = #{type} order by create_time desc limit #{startRow},#{endRow}
+  <select id="queryPowerProductList" resultMap="BaseResultMap">
+    select * from t_power_product where type = #{type} order by create_time desc limit #{startRow},#{endRow}
   </select>
 </mapper>
