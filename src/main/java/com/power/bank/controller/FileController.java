@@ -11,6 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.logging.Filter;
 
 @RestController
 @RequestMapping("/file")
@@ -18,18 +19,26 @@ public class FileController {
 
     private Logger logger = LoggerFactory.getLogger(FileController.class);
 
-    @RequestMapping(value = "/upload-img",method = RequestMethod.POST)
-    public String uploadImg(MultipartFile file){
-        logger.info("/upload-img,file={}",file.getName());
+    private static String uploadPath = "D:\\opt\\data\\fileUpload\\";
+
+    @RequestMapping(value = "/upload",method = RequestMethod.POST)
+    public String uploadImg(MultipartFile file,String productId,String type){
+        logger.info("/upload-img,file={}",file.getOriginalFilename());
         JSONObject jsonObject = new JSONObject();
         try {
             if(file == null){
                 return JsonResultHandler.handler(jsonObject,"-1001","文件不能为空");
             }
-            String filePath = "uploadFile/";
-            String fileName = file.getName();
-            File fl = new File(filePath+fileName);
-            file.transferTo(fl);
+            String filePath = uploadPath+type+"\\";
+            File fl = new File(filePath);
+            if(!fl.exists()){
+                fl.mkdir();
+            }
+            String fileName = filePath+file.getOriginalFilename();
+            System.out.println(fileName);
+            File f = new File(fileName);
+            file.transferTo(f);
+            jsonObject.put("fileName",file.getOriginalFilename());
         } catch (IOException e) {
             logger.info("系统异常,e={}",e.getMessage());
             JsonResultHandler.handler(jsonObject,"-9001","System Error");

@@ -27,7 +27,7 @@ public class PowerBankApplicationTests {
 			TPowerProduct tPowerProduct = new TPowerProduct();
 			tPowerProduct.setType(i+"");
 			tPowerProduct.setName("powerBank"+i);
-			productService.addPowerProduct(tPowerProduct);
+//			productService.addPowerProduct();
 		}
 	}
 

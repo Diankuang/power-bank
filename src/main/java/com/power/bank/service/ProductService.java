@@ -1,16 +1,19 @@
 package com.power.bank.service;
 
-import com.github.pagehelper.Page;
 import com.power.bank.dao.TPowerProductMapper;
 import com.power.bank.dao.TProductMapper;
+import com.power.bank.dao.TProductPictureMapper;
+import com.power.bank.dto.PowerProductDto;
 import com.power.bank.dto.ProductQueryDto;
 import com.power.bank.entity.TPowerProduct;
-import com.power.bank.entity.TProduct;
+import com.power.bank.entity.TProductPicture;
 import com.power.bank.utils.ToolsUtil;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -18,6 +21,9 @@ public class ProductService {
 
     @Autowired
     TProductMapper tProductMapper;
+
+    @Autowired
+    TProductPictureMapper tProductPictureMapper;
 
     @Autowired
     TPowerProductMapper tPowerProductMapper;
@@ -31,10 +37,35 @@ public class ProductService {
         }
     }
 
-    public void addPowerProduct(TPowerProduct tPowerProduct){
-        tPowerProduct.setId(getPowerProId());
-        tPowerProductMapper.insert(tPowerProduct);
+    private String getProPicId(){
+        String uuid = ToolsUtil.getUUID();
+        if(tPowerProductMapper.selectByPrimaryKey(uuid)!=null){
+            return getProPicId();
+        }else {
+            return uuid;
+        }
     }
+
+    public void addPowerProduct(PowerProductDto dto){
+        TPowerProduct tPowerProduct = new TPowerProduct();
+        BeanUtils.copyProperties(dto, tPowerProduct);
+        tPowerProduct.setId(getPowerProId());
+        tPowerProduct.setCreateTime(new Date());
+        tPowerProductMapper.insert(tPowerProduct);
+
+        List<String> picture = dto.getPicture();
+        for (String str:picture){
+            TProductPicture tProductPicture = new TProductPicture();
+            tProductPicture.setId(getProPicId());
+            tProductPicture.setProductId(tPowerProduct.getId());
+            tProductPicture.setType(dto.getType());
+            tProductPicture.setPicture(str);
+            tProductPicture.setCreateTime(new Date());
+            tProductPictureMapper.insert(tProductPicture);
+        }
+
+    }
+
     public Integer queryProductTotal(String type){
         Example example = new Example(TPowerProduct.class);
         example.createCriteria().andEqualTo("type",type);
@@ -47,4 +78,13 @@ public class ProductService {
         return tPowerProductMapper.queryPowerProductList(dto);
     }
 
+    public TPowerProduct queryTPowerProduct(String productId){
+        return tPowerProductMapper.selectByPrimaryKey(productId);
+    }
+
+    public List<TProductPicture> queryProductPictureList(String productId){
+        Example example = new Example(TProductPicture.class);
+        example.createCriteria().andEqualTo("productId",productId);
+        return tProductPictureMapper.selectByExample(example);
+    }
 }
