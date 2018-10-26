@@ -22,6 +22,7 @@
     <result column="plug" jdbcType="VARCHAR" property="plug" />
     <result column="create_time" jdbcType="DATE" property="createTime" />
     <result column="update_time" jdbcType="DATE" property="updateTime" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
   </resultMap>
 
   <select id="queryPowerProductList" resultMap="BaseResultMap">

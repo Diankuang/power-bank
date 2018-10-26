@@ -47,7 +47,22 @@ public class TPowerProduct implements Serializable {
     @Column(name = "update_time")
     private Date updateTime;
 
+    private Double price;
+
     private static final long serialVersionUID = 1L;
+
+    /**
+     * @return price
+     */
+    public Double getPrice() {
+        return price;
+    }
+    /**
+     * @param price
+     */
+    public void setPrice(Double price) {
+        this.price = price;
+    }
 
     /**
      * @return id
