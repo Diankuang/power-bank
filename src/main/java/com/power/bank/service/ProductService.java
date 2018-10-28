@@ -3,6 +3,7 @@ package com.power.bank.service;
 import com.power.bank.dao.TPowerProductMapper;
 import com.power.bank.dao.TProductMapper;
 import com.power.bank.dao.TProductPictureMapper;
+import com.power.bank.dto.PictureDto;
 import com.power.bank.dto.PowerProductDto;
 import com.power.bank.dto.ProductQueryDto;
 import com.power.bank.entity.TPowerProduct;
@@ -53,13 +54,14 @@ public class ProductService {
         tPowerProduct.setCreateTime(new Date());
         tPowerProductMapper.insert(tPowerProduct);
 
-        List<String> picture = dto.getPicture();
-        for (String str:picture){
+        List<PictureDto> picture = dto.getPicture();
+        for (PictureDto picDto:picture){
             TProductPicture tProductPicture = new TProductPicture();
             tProductPicture.setId(getProPicId());
             tProductPicture.setProductId(tPowerProduct.getId());
             tProductPicture.setType(dto.getType());
-            tProductPicture.setPicture(str);
+            tProductPicture.setPicture(picDto.getPicture());
+            tProductPicture.setOrderNo(picDto.getOrderNo());
             tProductPicture.setCreateTime(new Date());
             tProductPictureMapper.insert(tProductPicture);
         }
@@ -75,7 +77,15 @@ public class ProductService {
     public List<TPowerProduct> queryProductList(ProductQueryDto dto){
         dto.setStartRow((dto.getPageNum()-1)*dto.getPageSize());
         dto.setEndRow(dto.getPageNum() * dto.getPageSize());
-        return tPowerProductMapper.queryPowerProductList(dto);
+        List<TPowerProduct> tPowerProducts = tPowerProductMapper.queryPowerProductList(dto);
+        for (TPowerProduct t : tPowerProducts){
+            List<TProductPicture> tProductPictures = queryProductPictureList(t.getId());
+            if(tProductPictures != null && tProductPictures.size()>0){
+                TProductPicture tProductPicture = tProductPictures.get(0);
+                t.setPicture(tProductPicture.getPicture());
+            }
+        }
+        return tPowerProducts;
     }
 
     public TPowerProduct queryTPowerProduct(String productId){
@@ -85,6 +95,7 @@ public class ProductService {
     public List<TProductPicture> queryProductPictureList(String productId){
         Example example = new Example(TProductPicture.class);
         example.createCriteria().andEqualTo("productId",productId);
+        example.orderBy("orderNo").asc();
         return tProductPictureMapper.selectByExample(example);
     }
 }

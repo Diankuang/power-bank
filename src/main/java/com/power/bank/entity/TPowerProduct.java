@@ -49,7 +49,43 @@ public class TPowerProduct implements Serializable {
 
     private Double price;
 
+    /**
+     * 产品介绍
+     */
+    private String introductions;
+
+    private String modelNo;
+
+    private String certificate;
+
+    @Transient
+    private String picture;
+
     private static final long serialVersionUID = 1L;
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+
+    public String getModelNo() {
+        return modelNo;
+    }
+
+    public void setModelNo(String modelNo) {
+        this.modelNo = modelNo;
+    }
+
+    public String getCertificate() {
+        return certificate;
+    }
+
+    public void setCertificate(String certificate) {
+        this.certificate = certificate;
+    }
 
     /**
      * @return price
@@ -306,30 +342,38 @@ public class TPowerProduct implements Serializable {
         this.updateTime = updateTime;
     }
 
+    public String getIntroductions() {
+        return introductions;
+    }
+
+    public void setIntroductions(String introductions) {
+        this.introductions = introductions;
+    }
+
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", name=").append(name);
-        sb.append(", type=").append(type);
-        sb.append(", material=").append(material);
-        sb.append(", size=").append(size);
-        sb.append(", input=").append(input);
-        sb.append(", output=").append(output);
-        sb.append(", color=").append(color);
-        sb.append(", power=").append(power);
-        sb.append(", circuitProtections=").append(circuitProtections);
-        sb.append(", dimension=").append(dimension);
-        sb.append(", service=").append(service);
-        sb.append(", port=").append(port);
-        sb.append(", pin=").append(pin);
-        sb.append(", plug=").append(plug);
-        sb.append(", createTime=").append(createTime);
-        sb.append(", updateTime=").append(updateTime);
-        sb.append("]");
-        return sb.toString();
+        return "TPowerProduct{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", material='" + material + '\'' +
+                ", size='" + size + '\'' +
+                ", input='" + input + '\'' +
+                ", output='" + output + '\'' +
+                ", color='" + color + '\'' +
+                ", power='" + power + '\'' +
+                ", circuitProtections='" + circuitProtections + '\'' +
+                ", dimension='" + dimension + '\'' +
+                ", service='" + service + '\'' +
+                ", port='" + port + '\'' +
+                ", pin='" + pin + '\'' +
+                ", plug='" + plug + '\'' +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", price=" + price +
+                ", introductions='" + introductions + '\'' +
+                ", modelNo='" + modelNo + '\'' +
+                ", certificate='" + certificate + '\'' +
+                '}';
     }
 }

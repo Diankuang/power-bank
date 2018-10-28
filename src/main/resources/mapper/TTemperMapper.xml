@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.power.bank.dao.TTemperMapper">
+  <resultMap id="BaseResultMap" type="com.power.bank.entity.TTemper">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="adapter" jdbcType="VARCHAR" property="adapter" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+    <result column="create_time" jdbcType="DATE" property="createTime" />
+    <result column="update_time" jdbcType="DATE" property="updateTime" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="introductions" jdbcType="LONGVARCHAR" property="introductions" />
+  </resultMap>
+
+  <select id="queryTemperList" resultMap="BaseResultMap">
+    select id,name,adapter,type,price,introductions from t_temper
+    where type = #{type} order by create_time desc limit #{startRow},#{endRow}
+  </select>
+</mapper>

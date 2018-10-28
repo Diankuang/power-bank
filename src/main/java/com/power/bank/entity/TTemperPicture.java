@@ -4,21 +4,21 @@ import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "t_product_picture")
-public class TProductPicture implements Serializable {
+@Table(name = "t_temper_picture")
+public class TTemperPicture implements Serializable {
     @Id
     private String id;
 
     /**
-     * 产品编号
+     * 手机膜编号
      */
-    @Column(name = "product_id")
-    private String productId;
+    @Column(name = "temper_id")
+    private String temperId;
 
     private String picture;
 
     /**
-     * 产品类型
+     * 类型
      */
     private String type;
 
@@ -33,6 +33,7 @@ public class TProductPicture implements Serializable {
     /**
      * 图片排序
      */
+    @Column(name = "order_no")
     private Integer orderNo;
 
     private static final long serialVersionUID = 1L;
@@ -52,21 +53,21 @@ public class TProductPicture implements Serializable {
     }
 
     /**
-     * 获取产品编号
+     * 获取手机膜编号
      *
-     * @return product_id - 产品编号
+     * @return temper_id - 手机膜编号
      */
-    public String getProductId() {
-        return productId;
+    public String getTemperId() {
+        return temperId;
     }
 
     /**
-     * 设置产品编号
+     * 设置手机膜编号
      *
-     * @param productId 产品编号
+     * @param temperId 手机膜编号
      */
-    public void setProductId(String productId) {
-        this.productId = productId == null ? null : productId.trim();
+    public void setTemperId(String temperId) {
+        this.temperId = temperId == null ? null : temperId.trim();
     }
 
     /**
@@ -84,18 +85,18 @@ public class TProductPicture implements Serializable {
     }
 
     /**
-     * 获取产品类型
+     * 获取类型
      *
-     * @return type - 产品类型
+     * @return type - 类型
      */
     public String getType() {
         return type;
     }
 
     /**
-     * 设置产品类型
+     * 设置类型
      *
-     * @param type 产品类型
+     * @param type 类型
      */
     public void setType(String type) {
         this.type = type == null ? null : type.trim();
@@ -146,7 +147,7 @@ public class TProductPicture implements Serializable {
     /**
      * 获取图片排序
      *
-     * @return order - 图片排序
+     * @return order_no - 图片排序
      */
     public Integer getOrderNo() {
         return orderNo;
@@ -168,7 +169,7 @@ public class TProductPicture implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
-        sb.append(", productId=").append(productId);
+        sb.append(", temperId=").append(temperId);
         sb.append(", picture=").append(picture);
         sb.append(", type=").append(type);
         sb.append(", createTime=").append(createTime);

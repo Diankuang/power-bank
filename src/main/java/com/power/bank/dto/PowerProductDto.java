@@ -36,14 +36,47 @@ public class PowerProductDto {
 
     private String plug;
 
-    private List<String> picture;
+    /**
+     * 产品介绍
+     */
+    private String introductions;
 
-    public List<String> getPicture() {
+    private String modelNo;
+
+    private String certificate;
+
+    private List<PictureDto> picture;
+
+    public String getIntroductions() {
+        return introductions;
+    }
+
+    public void setIntroductions(String introductions) {
+        this.introductions = introductions;
+    }
+
+    public List<PictureDto> getPicture() {
         return picture;
     }
 
-    public void setPicture(List<String> picture) {
+    public void setPicture(List<PictureDto> picture) {
         this.picture = picture;
+    }
+
+    public String getModelNo() {
+        return modelNo;
+    }
+
+    public void setModelNo(String modelNo) {
+        this.modelNo = modelNo;
+    }
+
+    public String getCertificate() {
+        return certificate;
+    }
+
+    public void setCertificate(String certificate) {
+        this.certificate = certificate;
     }
 
     public String getName() {
@@ -175,6 +208,9 @@ public class PowerProductDto {
                 ", port='" + port + '\'' +
                 ", pin='" + pin + '\'' +
                 ", plug='" + plug + '\'' +
+                ", introductions='" + introductions + '\'' +
+                ", modelNo='" + modelNo + '\'' +
+                ", certificate='" + certificate + '\'' +
                 ", picture=" + picture +
                 '}';
     }

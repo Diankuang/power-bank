@@ -23,6 +23,9 @@
     <result column="create_time" jdbcType="DATE" property="createTime" />
     <result column="update_time" jdbcType="DATE" property="updateTime" />
     <result column="price" jdbcType="DOUBLE" property="price" />
+    <result column="introductions" jdbcType="LONGVARCHAR" property="introductions" />
+    <result column="model_no" jdbcType="VARCHAR" property="modelNo" />
+    <result column="certificate" jdbcType="VARCHAR" property="certificate" />
   </resultMap>
 
   <select id="queryPowerProductList" resultMap="BaseResultMap">

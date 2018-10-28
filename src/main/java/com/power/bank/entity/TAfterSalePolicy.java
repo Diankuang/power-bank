@@ -4,23 +4,15 @@ import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "t_product_picture")
-public class TProductPicture implements Serializable {
+@Table(name = "t_after_sale_policy")
+public class TAfterSalePolicy implements Serializable {
     @Id
     private String id;
 
     /**
-     * 产品编号
+     * 0有效，1无效
      */
-    @Column(name = "product_id")
-    private String productId;
-
-    private String picture;
-
-    /**
-     * 产品类型
-     */
-    private String type;
+    private Integer status;
 
     @Column(name = "create_time")
     private Date createTime;
@@ -30,10 +22,7 @@ public class TProductPicture implements Serializable {
 
     private String remark;
 
-    /**
-     * 图片排序
-     */
-    private Integer orderNo;
+    private String title;
 
     private static final long serialVersionUID = 1L;
 
@@ -52,53 +41,21 @@ public class TProductPicture implements Serializable {
     }
 
     /**
-     * 获取产品编号
+     * 获取0有效，1无效
      *
-     * @return product_id - 产品编号
+     * @return status - 0有效，1无效
      */
-    public String getProductId() {
-        return productId;
+    public Integer getStatus() {
+        return status;
     }
 
     /**
-     * 设置产品编号
+     * 设置0有效，1无效
      *
-     * @param productId 产品编号
+     * @param status 0有效，1无效
      */
-    public void setProductId(String productId) {
-        this.productId = productId == null ? null : productId.trim();
-    }
-
-    /**
-     * @return picture
-     */
-    public String getPicture() {
-        return picture;
-    }
-
-    /**
-     * @param picture
-     */
-    public void setPicture(String picture) {
-        this.picture = picture == null ? null : picture.trim();
-    }
-
-    /**
-     * 获取产品类型
-     *
-     * @return type - 产品类型
-     */
-    public String getType() {
-        return type;
-    }
-
-    /**
-     * 设置产品类型
-     *
-     * @param type 产品类型
-     */
-    public void setType(String type) {
-        this.type = type == null ? null : type.trim();
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     /**
@@ -144,21 +101,17 @@ public class TProductPicture implements Serializable {
     }
 
     /**
-     * 获取图片排序
-     *
-     * @return order - 图片排序
+     * @return title
      */
-    public Integer getOrderNo() {
-        return orderNo;
+    public String getTitle() {
+        return title;
     }
 
     /**
-     * 设置图片排序
-     *
-     * @param orderNo 图片排序
+     * @param title
      */
-    public void setOrderNo(Integer orderNo) {
-        this.orderNo = orderNo;
+    public void setTitle(String title) {
+        this.title = title == null ? null : title.trim();
     }
 
     @Override
@@ -168,13 +121,11 @@ public class TProductPicture implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
-        sb.append(", productId=").append(productId);
-        sb.append(", picture=").append(picture);
-        sb.append(", type=").append(type);
+        sb.append(", status=").append(status);
         sb.append(", createTime=").append(createTime);
         sb.append(", updateTime=").append(updateTime);
         sb.append(", remark=").append(remark);
-        sb.append(", orderNo=").append(orderNo);
+        sb.append(", title=").append(title);
         sb.append("]");
         return sb.toString();
     }

@@ -4,23 +4,19 @@ import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "t_product_picture")
-public class TProductPicture implements Serializable {
+@Table(name = "t_after_sale_policy_detail")
+public class TAfterSalePolicyDetail implements Serializable {
     @Id
     private String id;
 
     /**
-     * 产品编号
+     * t_after_sale_policy表对应主键
      */
-    @Column(name = "product_id")
-    private String productId;
+    @Column(name = "asp_id")
+    private String aspId;
 
-    private String picture;
-
-    /**
-     * 产品类型
-     */
-    private String type;
+    @Column(name = "order_no")
+    private Integer orderNo;
 
     @Column(name = "create_time")
     private Date createTime;
@@ -28,12 +24,14 @@ public class TProductPicture implements Serializable {
     @Column(name = "update_time")
     private Date updateTime;
 
+    /**
+     * 0有效，1无效
+     */
+    private Integer status;
+
     private String remark;
 
-    /**
-     * 图片排序
-     */
-    private Integer orderNo;
+    private String content;
 
     private static final long serialVersionUID = 1L;
 
@@ -52,53 +50,35 @@ public class TProductPicture implements Serializable {
     }
 
     /**
-     * 获取产品编号
+     * 获取t_after_sale_policy表对应主键
      *
-     * @return product_id - 产品编号
+     * @return asp_id - t_after_sale_policy表对应主键
      */
-    public String getProductId() {
-        return productId;
+    public String getAspId() {
+        return aspId;
     }
 
     /**
-     * 设置产品编号
+     * 设置t_after_sale_policy表对应主键
      *
-     * @param productId 产品编号
+     * @param aspId t_after_sale_policy表对应主键
      */
-    public void setProductId(String productId) {
-        this.productId = productId == null ? null : productId.trim();
+    public void setAspId(String aspId) {
+        this.aspId = aspId == null ? null : aspId.trim();
     }
 
     /**
-     * @return picture
+     * @return order_no
      */
-    public String getPicture() {
-        return picture;
+    public Integer getOrderNo() {
+        return orderNo;
     }
 
     /**
-     * @param picture
+     * @param orderNo
      */
-    public void setPicture(String picture) {
-        this.picture = picture == null ? null : picture.trim();
-    }
-
-    /**
-     * 获取产品类型
-     *
-     * @return type - 产品类型
-     */
-    public String getType() {
-        return type;
-    }
-
-    /**
-     * 设置产品类型
-     *
-     * @param type 产品类型
-     */
-    public void setType(String type) {
-        this.type = type == null ? null : type.trim();
+    public void setOrderNo(Integer orderNo) {
+        this.orderNo = orderNo;
     }
 
     /**
@@ -130,6 +110,24 @@ public class TProductPicture implements Serializable {
     }
 
     /**
+     * 获取0有效，1无效
+     *
+     * @return status - 0有效，1无效
+     */
+    public Integer getStatus() {
+        return status;
+    }
+
+    /**
+     * 设置0有效，1无效
+     *
+     * @param status 0有效，1无效
+     */
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    /**
      * @return remark
      */
     public String getRemark() {
@@ -144,21 +142,17 @@ public class TProductPicture implements Serializable {
     }
 
     /**
-     * 获取图片排序
-     *
-     * @return order - 图片排序
+     * @return content
      */
-    public Integer getOrderNo() {
-        return orderNo;
+    public String getContent() {
+        return content;
     }
 
     /**
-     * 设置图片排序
-     *
-     * @param orderNo 图片排序
+     * @param content
      */
-    public void setOrderNo(Integer orderNo) {
-        this.orderNo = orderNo;
+    public void setContent(String content) {
+        this.content = content == null ? null : content.trim();
     }
 
     @Override
@@ -168,13 +162,13 @@ public class TProductPicture implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
-        sb.append(", productId=").append(productId);
-        sb.append(", picture=").append(picture);
-        sb.append(", type=").append(type);
+        sb.append(", aspId=").append(aspId);
+        sb.append(", orderNo=").append(orderNo);
         sb.append(", createTime=").append(createTime);
         sb.append(", updateTime=").append(updateTime);
+        sb.append(", status=").append(status);
         sb.append(", remark=").append(remark);
-        sb.append(", orderNo=").append(orderNo);
+        sb.append(", content=").append(content);
         sb.append("]");
         return sb.toString();
     }

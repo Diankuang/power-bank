@@ -1,20 +1,14 @@
 package com.power.bank.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.github.pagehelper.Page;
-import com.github.pagehelper.PageHelper;
-import com.power.bank.dao.TProductMapper;
 import com.power.bank.dto.PowerProductDto;
 import com.power.bank.dto.ProductQueryDto;
 import com.power.bank.entity.TPowerProduct;
-import com.power.bank.entity.TProduct;
 import com.power.bank.entity.TProductPicture;
 import com.power.bank.service.ProductService;
 import com.power.bank.utils.JsonResultHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tk.mybatis.mapper.util.StringUtil;
