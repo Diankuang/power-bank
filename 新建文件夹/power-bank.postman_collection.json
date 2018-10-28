@@ -1,0 +1,235 @@
+{
+	"id": "a4eaac30-08ef-fc36-93bf-7a345108fd43",
+	"name": "power-bank",
+	"description": "",
+	"order": [
+		"9f05e22a-3318-9f7c-4550-be924a78f8dd",
+		"f50df645-6ff2-658a-e864-ff058b9d995e",
+		"7a733353-d080-9018-3a3a-7448b12c12e3",
+		"dd49a69c-fe11-0dda-6863-18acdac91977",
+		"35083c10-579a-eb86-e294-60d5e604f6f5",
+		"bf8457bc-0b0b-3d22-b146-2b079e221054",
+		"9619cce7-eec7-2cab-193f-1b6ad62a4476"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1540304189001,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "35083c10-579a-eb86-e294-60d5e604f6f5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9002/temper/add-temper",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1540740128746,
+			"name": "添加temper",
+			"description": "",
+			"collectionId": "a4eaac30-08ef-fc36-93bf-7a345108fd43",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"others X 3D丝印钢化玻璃膜\",\n\t\"adapter\":\"others X\",\n\t\"type\":6,\n\t\"price\":0,\n\t\"introductions\":\"3D丝印边框钢化玻璃膜较3D丝印边框钢化玻璃膜,弧度更圆润，弧面更窄，较3D膜看起来，更佳精致，引人注目。光滑的表面及出色的画质，完美的与液晶屏结合，易贴易取，不留残胶；采用丝印工艺，色彩炫丽，大大增加贴合产品的美感；经过强化处理，具有良好的机械性能和耐热抗震性能的玻璃；超强防刮耐磨，高灵敏度触摸及滑感，高清晰的画面透光度达95%，即使贴膜破裂也保持块状，不会散落，极大地降低了对人体的伤害。\",\n\t\"picture\":[{\"picture\":\"201804180938383838.jpg\",\"orderNo\":1},{\"picture\":\"201804180938403840.jpg\",\"orderNo\":2},{\"picture\":\"201804180940274027.jpg\",\"orderNo\":3}]\n}"
+		},
+		{
+			"id": "7a733353-d080-9018-3a3a-7448b12c12e3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9002/faq/add-faq",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a4eaac30-08ef-fc36-93bf-7a345108fd43",
+			"data": [],
+			"dataMode": "raw",
+			"name": "添加FAQ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1540631899759,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"title\":\"Can the charger ports work at the same time when I do a wireless charging?\",\n\t\"content1\":\"The charger ports can work at the same time with the wireless charging.\"\n\n\n}"
+		},
+		{
+			"id": "9619cce7-eec7-2cab-193f-1b6ad62a4476",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9002/product/add-power-products",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a4eaac30-08ef-fc36-93bf-7a345108fd43",
+			"data": [],
+			"dataMode": "raw",
+			"name": "添加power",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1540708972764,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"name\":\"WD-213-5100QI\",\n\t\"type\":\"Wireless Charger\",\n\t\"material\":\"PC(Fireproof)\",\n\t\"size\":\"108*108*7 mm\",\n\t\"input\":\" DC 5V 2A; 9V 1.67A\",\n\t\"output\":\"\",\n\t\"color\":\"Metal pad / Heat dissipation fast /Varied colors / Customized pattern\",\n\t\"power\":\"\",\n\t\"circuitProtections\":\"high temperature, over-current, and short circuit;\",\n\t\"dimension\":\"\",\n\t\"service\":\"\",\n\t\"port\":\"\",\n\t\"modelNo\":\"WD-213-5100QI\",\n\t\"pin\":\"\",\n\t\"plug\":\"\",\n\t\"certificate\":\" QI, FCC, RoHS, CE\",\n\t\"introductions\":\"\",\n\t\"picture\":[\n\t\t{\"picture\":\"5b2b38d1023ed.jpg\",\"orderNo\":1},\n\t\t{\"picture\":\"5b2b38d4a440d.jpg\",\"orderNo\":2},\n\t\t{\"picture\":\"5b2b38d8cb68e.jpg\",\"orderNo\":3},\n\t\t{\"picture\":\"5b2b38d32c5e1.jpg\",\"orderNo\":4},\n\t\t{\"picture\":\"5b2b38d240a8d.jpg\",\"orderNo\":5},\n\t\t{\"picture\":\"5b2b38d651d8a.jpg\",\"orderNo\":6},\n\t\t{\"picture\":\"5b2b38da09c52.jpg\",\"orderNo\":7},\n\t\t{\"picture\":\"5b2b38db5a4c9.jpg\",\"orderNo\":8},\n\t\t{\"picture\":\"5b2b38dd219f4.jpg\",\"orderNo\":9}\n\t]\n}"
+		},
+		{
+			"id": "9f05e22a-3318-9f7c-4550-be924a78f8dd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9002/temper/query-temper",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a4eaac30-08ef-fc36-93bf-7a345108fd43",
+			"data": [],
+			"dataMode": "raw",
+			"name": "查询Temper",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1540631870346,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"pageSize\":1,\n\t\"pageNum\":2,\n\t\"type\":\"1\"\n}"
+		},
+		{
+			"id": "bf8457bc-0b0b-3d22-b146-2b079e221054",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9002/temper/query-Temper-detail",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a4eaac30-08ef-fc36-93bf-7a345108fd43",
+			"data": [
+				{
+					"key": "temperId",
+					"value": "3009181396",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "查询temperDetail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1540634332197,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "dd49a69c-fe11-0dda-6863-18acdac91977",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9002/power-bank/product/query-power-products",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a4eaac30-08ef-fc36-93bf-7a345108fd43",
+			"data": [],
+			"dataMode": "raw",
+			"name": "查询powerList",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1540631924906,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"type\":\"1\",\n\t\"pageNum\":1,\n\t\"pageSize\":10\n}"
+		},
+		{
+			"id": "f50df645-6ff2-658a-e864-ff058b9d995e",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:9002/faq/query-latest",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a4eaac30-08ef-fc36-93bf-7a345108fd43",
+			"data": null,
+			"dataMode": "params",
+			"name": "查询FAQ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1540631887640,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

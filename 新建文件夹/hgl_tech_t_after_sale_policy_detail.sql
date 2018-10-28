@@ -16,41 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `t_product`
+-- Table structure for table `t_after_sale_policy_detail`
 --
 
-DROP TABLE IF EXISTS `t_product`;
+DROP TABLE IF EXISTS `t_after_sale_policy_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `t_product` (
+CREATE TABLE `t_after_sale_policy_detail` (
   `id` varchar(10) NOT NULL,
-  `name` varchar(45) DEFAULT NULL,
-  `type` varchar(45) DEFAULT NULL,
-  `material` varchar(45) DEFAULT NULL,
-  `size` varchar(45) DEFAULT NULL,
-  `input` varchar(45) DEFAULT NULL,
-  `output` varchar(45) DEFAULT NULL,
-  `color` varchar(45) DEFAULT NULL,
-  `power` varchar(45) DEFAULT NULL,
-  `circuit_protections` varchar(45) DEFAULT NULL,
-  `dimension` varchar(45) DEFAULT NULL,
-  `service` varchar(45) DEFAULT NULL,
-  `port` varchar(45) DEFAULT NULL,
-  `pin` varchar(45) DEFAULT NULL,
-  `plug` varchar(45) DEFAULT NULL,
-  `create_time` date DEFAULT NULL,
-  `update_time` date DEFAULT NULL,
+  `asp_id` varchar(10) DEFAULT NULL COMMENT 't_after_sale_policy表对应主键',
+  `content` text,
+  `order_no` int(11) DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  `status` int(11) DEFAULT NULL COMMENT '0有效，1无效',
+  `remark` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='产品详情表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='售后服务详情';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `t_product`
+-- Dumping data for table `t_after_sale_policy_detail`
 --
 
-LOCK TABLES `t_product` WRITE;
-/*!40000 ALTER TABLE `t_product` DISABLE KEYS */;
-/*!40000 ALTER TABLE `t_product` ENABLE KEYS */;
+LOCK TABLES `t_after_sale_policy_detail` WRITE;
+/*!40000 ALTER TABLE `t_after_sale_policy_detail` DISABLE KEYS */;
+/*!40000 ALTER TABLE `t_after_sale_policy_detail` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -62,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-21 22:29:45
+-- Dump completed on 2018-10-28 23:27:39

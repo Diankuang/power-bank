@@ -16,34 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `t_product_bare`
+-- Table structure for table `t_after_sale_policy`
 --
 
-DROP TABLE IF EXISTS `t_product_bare`;
+DROP TABLE IF EXISTS `t_after_sale_policy`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `t_product_bare` (
-  `product_id` varchar(10) NOT NULL,
-  `product_name` varchar(45) DEFAULT NULL,
-  `model_no` varchar(45) DEFAULT NULL,
-  `material` varchar(45) DEFAULT NULL,
-  `size` varchar(45) DEFAULT NULL,
-  `input` varchar(45) DEFAULT NULL,
-  `color` varchar(45) DEFAULT NULL,
-  `price` double DEFAULT NULL,
-  `create_time` date DEFAULT NULL,
-  `update_time` date DEFAULT NULL,
-  PRIMARY KEY (`product_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='产品详情表';
+CREATE TABLE `t_after_sale_policy` (
+  `id` varchar(10) NOT NULL,
+  `title` text,
+  `status` int(11) DEFAULT NULL COMMENT '0有效，1无效',
+  `create_time` datetime DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  `remark` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='售后服务';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `t_product_bare`
+-- Dumping data for table `t_after_sale_policy`
 --
 
-LOCK TABLES `t_product_bare` WRITE;
-/*!40000 ALTER TABLE `t_product_bare` DISABLE KEYS */;
-/*!40000 ALTER TABLE `t_product_bare` ENABLE KEYS */;
+LOCK TABLES `t_after_sale_policy` WRITE;
+/*!40000 ALTER TABLE `t_after_sale_policy` DISABLE KEYS */;
+/*!40000 ALTER TABLE `t_after_sale_policy` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -55,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-28 23:27:35
+-- Dump completed on 2018-10-28 23:27:32

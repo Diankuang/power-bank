@@ -16,34 +16,33 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `t_product_bare`
+-- Table structure for table `t_temper_picture`
 --
 
-DROP TABLE IF EXISTS `t_product_bare`;
+DROP TABLE IF EXISTS `t_temper_picture`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `t_product_bare` (
-  `product_id` varchar(10) NOT NULL,
-  `product_name` varchar(45) DEFAULT NULL,
-  `model_no` varchar(45) DEFAULT NULL,
-  `material` varchar(45) DEFAULT NULL,
-  `size` varchar(45) DEFAULT NULL,
-  `input` varchar(45) DEFAULT NULL,
-  `color` varchar(45) DEFAULT NULL,
-  `price` double DEFAULT NULL,
-  `create_time` date DEFAULT NULL,
-  `update_time` date DEFAULT NULL,
-  PRIMARY KEY (`product_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='产品详情表';
+CREATE TABLE `t_temper_picture` (
+  `id` varchar(10) NOT NULL,
+  `temper_id` varchar(10) DEFAULT NULL COMMENT '手机膜编号',
+  `picture` varchar(100) DEFAULT NULL,
+  `type` varchar(100) DEFAULT NULL COMMENT '类型',
+  `create_time` datetime DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  `remark` varchar(45) DEFAULT NULL,
+  `order_no` int(11) DEFAULT NULL COMMENT '图片排序',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='手机膜对应图片';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `t_product_bare`
+-- Dumping data for table `t_temper_picture`
 --
 
-LOCK TABLES `t_product_bare` WRITE;
-/*!40000 ALTER TABLE `t_product_bare` DISABLE KEYS */;
-/*!40000 ALTER TABLE `t_product_bare` ENABLE KEYS */;
+LOCK TABLES `t_temper_picture` WRITE;
+/*!40000 ALTER TABLE `t_temper_picture` DISABLE KEYS */;
+INSERT INTO `t_temper_picture` VALUES ('0530210983','9552494256','201804180940274027.jpg',NULL,'2018-10-28 15:02:32',NULL,NULL,3),('0943866071','9552494256','201804180938403840.jpg',NULL,'2018-10-28 15:02:32',NULL,NULL,2),('0943866072','8331638439','201804180938403840.jpg',NULL,'2018-10-28 15:02:32',NULL,NULL,2),('3757410844','9552494256','201804180938383838.jpg',NULL,'2018-10-28 15:02:32',NULL,NULL,1);
+/*!40000 ALTER TABLE `t_temper_picture` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -55,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-28 23:27:35
+-- Dump completed on 2018-10-28 23:27:43
