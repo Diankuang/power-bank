@@ -4056,3 +4056,551 @@ tk.mybatis.mapper.MapperException: 当前实体类不包含名为orderNo asc的�
 2018-10-28 22:53:58.524 [http-nio-9002-exec-3] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==>  Preparing: SELECT id,title,status,create_time,update_time,content1,content2,content3,content4 FROM t_faq 
 2018-10-28 22:53:58.527 [http-nio-9002-exec-3] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==> Parameters: 
 2018-10-28 22:53:58.530 [http-nio-9002-exec-3] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - <==      Total: 8
+2018-10-29 10:56:04.875 [main] INFO  com.power.bank.PowerBankApplication.logStarting50 - Starting PowerBankApplication on DESKTOP-ROAPLB0 with PID 14808 (C:\Users\15779\Desktop\power-bank\target\classes started by 15779 in C:\Users\15779\Desktop\power-bank)
+2018-10-29 10:56:04.878 [main] DEBUG com.power.bank.PowerBankApplication.logStarting53 - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-10-29 10:56:04.879 [main] INFO  com.power.bank.PowerBankApplication.logStartupProfileInfo666 - The following profiles are active: dev
+2018-10-29 10:56:04.949 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ca33c24: startup date [Mon Oct 29 10:56:04 CST 2018]; root of context hierarchy
+2018-10-29 10:56:05.422 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner.doScan166 - No MyBatis mapper was found in '[com.power.bank]' package. Please check your configuration.
+2018-10-29 10:56:05.458 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate.multipleStoresDetected163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-29 10:56:05.786 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$382c0012] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-29 10:56:06.111 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize91 - Tomcat initialized with port(s): 9002 (http)
+2018-10-29 10:56:06.128 [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log180 - Initializing ProtocolHandler ["http-nio-9002"]
+2018-10-29 10:56:06.136 [main] INFO  org.apache.catalina.core.StandardService.log180 - Starting service [Tomcat]
+2018-10-29 10:56:06.136 [main] INFO  org.apache.catalina.core.StandardEngine.log180 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-10-29 10:56:06.140 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener.log180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jdk1.8.0_144\jre\bin;D:\xiedishi\dev software\mysql\bin;D:\xiedishi\dev\nodejs\;D:\xiedishi\dev\Git\cmd;D:\xiedishi\dev\TortoiseGit\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\xiedishi\dev\SVN-SERVER\bin;D:\xiedishi\dev\VisualSVN Server\bin;D:\xiedishi\dev\python\python2.7;D:\xiedishi\dev\python\Scripts\;D:\xiedishi\dev\python\python2.7;C:\Users\15779\AppData\Local\Microsoft\WindowsApps;C:\Users\15779\AppData\Roaming\npm;D:\xiedishi\dev\Microsoft VS Code\bin;;.]
+2018-10-29 10:56:06.221 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log180 - Initializing Spring embedded WebApplicationContext
+2018-10-29 10:56:06.221 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader.prepareWebApplicationContext285 - Root WebApplicationContext: initialization completed in 1272 ms
+2018-10-29 10:56:06.276 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean.addRegistration187 - Servlet dispatcherServlet mapped to [/]
+2018-10-29 10:56:06.280 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-29 10:56:06.280 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-29 10:56:06.280 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-29 10:56:06.280 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-29 10:56:07.026 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-29 10:56:07.224 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ca33c24: startup date [Mon Oct 29 10:56:04 CST 2018]; root of context hierarchy
+2018-10-29 10:56:07.273 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/faq/query-all],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FaqController.quetyAll()
+2018-10-29 10:56:07.274 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/faq/query-latest],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FaqController.quetyLatestList()
+2018-10-29 10:56:07.275 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/faq/add-faq],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FaqController.addFaq(com.power.bank.dto.FaqDto)
+2018-10-29 10:56:07.276 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/file/upload],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FileController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)
+2018-10-29 10:56:07.277 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/product/query-power-pro-detail],methods=[POST]}" onto public java.lang.String com.power.bank.controller.ProductController.queryPowerProductDetail(java.lang.String)
+2018-10-29 10:56:07.277 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/product/query-power-products],methods=[POST]}" onto public java.lang.String com.power.bank.controller.ProductController.queryProduts(com.power.bank.dto.ProductQueryDto)
+2018-10-29 10:56:07.277 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/product/add-power-products],methods=[POST]}" onto public java.lang.String com.power.bank.controller.ProductController.addPowerProducts(com.power.bank.dto.PowerProductDto)
+2018-10-29 10:56:07.278 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/temper/query-Temper-detail],methods=[POST]}" onto public java.lang.String com.power.bank.controller.TemperController.queryTemperDetail(java.lang.String)
+2018-10-29 10:56:07.278 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/temper/add-temper],methods=[POST]}" onto public java.lang.String com.power.bank.controller.TemperController.addTemper(com.power.bank.dto.TemperDto)
+2018-10-29 10:56:07.278 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/temper/query-temper],methods=[POST]}" onto public java.lang.String com.power.bank.controller.TemperController.queryTemperList(com.power.bank.dto.QueryTemDto)
+2018-10-29 10:56:07.279 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/register],methods=[POST]}" onto public java.lang.String com.power.bank.controller.UserController.register(com.power.bank.dto.RegisterDto)
+2018-10-29 10:56:07.279 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/add-or-update-wish-list],methods=[POST]}" onto public java.lang.String com.power.bank.controller.UserController.addOrUpdateWishList(com.power.bank.dto.WishListDto)
+2018-10-29 10:56:07.280 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/check-email-exist],methods=[GET]}" onto public java.lang.String com.power.bank.controller.UserController.checkEmailExust(java.lang.String)
+2018-10-29 10:56:07.280 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/login],methods=[POST]}" onto public java.lang.String com.power.bank.controller.UserController.login(com.power.bank.dto.LoginDto,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-29 10:56:07.280 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/logout]}" onto public java.lang.String com.power.bank.controller.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-29 10:56:07.283 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-29 10:56:07.284 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-29 10:56:07.314 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-29 10:56:07.315 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-29 10:56:07.820 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated433 - Registering beans for JMX exposure on startup
+2018-10-29 10:56:07.821 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-29 10:56:07.825 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-29 10:56:07.832 [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log180 - Starting ProtocolHandler ["http-nio-9002"]
+2018-10-29 10:56:07.839 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool.log180 - Using a shared selector for servlet write/read
+2018-10-29 10:56:07.852 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.start206 - Tomcat started on port(s): 9002 (http) with context path ''
+2018-10-29 10:56:07.854 [main] INFO  com.power.bank.PowerBankApplication.logStarted59 - Started PowerBankApplication in 3.419 seconds (JVM running for 4.068)
+2018-10-29 10:56:15.788 [http-nio-9002-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-29 10:56:15.788 [http-nio-9002-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-29 10:56:15.804 [http-nio-9002-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean509 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-10-29 10:56:15.893 [http-nio-9002-exec-2] INFO  com.power.bank.controller.TemperController.queryTemperList44 - query-temper,QueryTemDto=QueryTemDto{type='1'}
+2018-10-29 10:56:15.910 [http-nio-9002-exec-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection110 - HikariPool-1 - Starting...
+2018-10-29 10:56:16.144 [http-nio-9002-exec-2] INFO  com.zaxxer.hikari.HikariDataSource.getConnection123 - HikariPool-1 - Start completed.
+2018-10-29 10:56:16.150 [http-nio-9002-exec-2] DEBUG com.power.bank.dao.TTemperMapper.queryTemperList.debug159 - ==>  Preparing: select id,name,adapter,type,price,introductions from t_temper where type = ? order by create_time desc limit ?,? 
+2018-10-29 10:56:16.166 [http-nio-9002-exec-2] DEBUG com.power.bank.dao.TTemperMapper.queryTemperList.debug159 - ==> Parameters: 1(String), 0(Integer), 10(Integer)
+2018-10-29 10:56:16.188 [http-nio-9002-exec-2] DEBUG com.power.bank.dao.TTemperMapper.queryTemperList.debug159 - <==      Total: 2
+2018-10-29 10:56:16.216 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TTemperPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,temper_id,picture,type,create_time,update_time,remark,order_no FROM t_temper_picture WHERE ( temper_id = ? ) order by order_no ASC 
+2018-10-29 10:56:16.217 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TTemperPictureMapper.selectByExample.debug159 - ==> Parameters: 0549686736(String)
+2018-10-29 10:56:16.226 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TTemperPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 10:56:16.227 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TTemperPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,temper_id,picture,type,create_time,update_time,remark,order_no FROM t_temper_picture WHERE ( temper_id = ? ) order by order_no ASC 
+2018-10-29 10:56:16.228 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TTemperPictureMapper.selectByExample.debug159 - ==> Parameters: 3009181396(String)
+2018-10-29 10:56:16.240 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TTemperPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 10:56:54.736 [http-nio-9002-exec-5] INFO  com.power.bank.controller.ProductController.queryProduts46 - /query-power-products,ProductQueryDto=ProductQueryDto{type='Wireless charger', pageNum=1, pageSize=10, startRow=0, endRow=0}
+2018-10-29 10:56:54.742 [http-nio-9002-exec-5] DEBUG c.p.b.dao.TPowerProductMapper.selectCountByExample.debug159 - ==>  Preparing: SELECT COUNT(id) FROM t_power_product WHERE ( type = ? ) 
+2018-10-29 10:56:54.742 [http-nio-9002-exec-5] DEBUG c.p.b.dao.TPowerProductMapper.selectCountByExample.debug159 - ==> Parameters: Wireless charger(String)
+2018-10-29 10:56:54.751 [http-nio-9002-exec-5] DEBUG c.p.b.dao.TPowerProductMapper.selectCountByExample.debug159 - <==      Total: 1
+2018-10-29 10:56:54.751 [http-nio-9002-exec-5] DEBUG c.p.b.d.TPowerProductMapper.queryPowerProductList.debug159 - ==>  Preparing: select * from t_power_product where type = ? order by create_time desc limit ?,? 
+2018-10-29 10:56:54.752 [http-nio-9002-exec-5] DEBUG c.p.b.d.TPowerProductMapper.queryPowerProductList.debug159 - ==> Parameters: Wireless charger(String), 0(Integer), 10(Integer)
+2018-10-29 10:56:54.762 [http-nio-9002-exec-5] DEBUG c.p.b.d.TPowerProductMapper.queryPowerProductList.debug159 - <==      Total: 9
+2018-10-29 10:56:54.764 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 10:56:54.764 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 1141779553(String)
+2018-10-29 10:56:54.774 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 10:56:54.775 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 10:56:54.775 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 1323764257(String)
+2018-10-29 10:56:54.784 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 9
+2018-10-29 10:56:54.785 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 10:56:54.786 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 1886636506(String)
+2018-10-29 10:56:54.793 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 10:56:54.794 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 10:56:54.794 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 2108873177(String)
+2018-10-29 10:56:54.802 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 10:56:54.804 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 10:56:54.804 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 5543562079(String)
+2018-10-29 10:56:54.813 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 10:56:54.815 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 10:56:54.815 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 6047396325(String)
+2018-10-29 10:56:54.822 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 10:56:54.823 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 10:56:54.823 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 9208671537(String)
+2018-10-29 10:56:54.835 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 10:56:54.836 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 10:56:54.836 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 9431131742(String)
+2018-10-29 10:56:54.847 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 10:56:54.848 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 10:56:54.849 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 6582116488(String)
+2018-10-29 10:56:54.857 [http-nio-9002-exec-5] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 10:57:04.835 [http-nio-9002-exec-7] INFO  com.power.bank.controller.ProductController.queryPowerProductDetail72 - /query-power-pro-detail,productId=1323764257
+2018-10-29 10:57:04.838 [http-nio-9002-exec-9] INFO  com.power.bank.controller.FaqController.quetyLatestList43 - /query-latest
+2018-10-29 10:57:04.844 [http-nio-9002-exec-7] DEBUG c.p.b.dao.TPowerProductMapper.selectByPrimaryKey.debug159 - ==>  Preparing: SELECT id,name,type,material,size,input,output,color,power,circuit_protections,dimension,service,port,pin,plug,create_time,update_time,price,introductions,model_no,certificate FROM t_power_product WHERE id = ? 
+2018-10-29 10:57:04.844 [http-nio-9002-exec-7] DEBUG c.p.b.dao.TPowerProductMapper.selectByPrimaryKey.debug159 - ==> Parameters: 1323764257(String)
+2018-10-29 10:57:04.847 [http-nio-9002-exec-9] DEBUG com.power.bank.dao.TFaqMapper.queryLatestList.debug159 - ==>  Preparing: select * from t_faq order by create_time desc limit 5 
+2018-10-29 10:57:04.848 [http-nio-9002-exec-9] DEBUG com.power.bank.dao.TFaqMapper.queryLatestList.debug159 - ==> Parameters: 
+2018-10-29 10:57:04.857 [http-nio-9002-exec-7] DEBUG c.p.b.dao.TPowerProductMapper.selectByPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 10:57:04.858 [http-nio-9002-exec-7] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 10:57:04.858 [http-nio-9002-exec-7] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 1323764257(String)
+2018-10-29 10:57:04.860 [http-nio-9002-exec-9] DEBUG com.power.bank.dao.TFaqMapper.queryLatestList.debug159 - <==      Total: 5
+2018-10-29 10:57:04.869 [http-nio-9002-exec-7] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 9
+2018-10-29 11:03:31.802 [http-nio-9002-exec-2] INFO  com.power.bank.controller.ProductController.queryProduts46 - /query-power-products,ProductQueryDto=ProductQueryDto{type='Wireless charger', pageNum=1, pageSize=10, startRow=0, endRow=0}
+2018-10-29 11:03:31.816 [http-nio-9002-exec-2] DEBUG c.p.b.dao.TPowerProductMapper.selectCountByExample.debug159 - ==>  Preparing: SELECT COUNT(id) FROM t_power_product WHERE ( type = ? ) 
+2018-10-29 11:03:31.817 [http-nio-9002-exec-2] DEBUG c.p.b.dao.TPowerProductMapper.selectCountByExample.debug159 - ==> Parameters: Wireless charger(String)
+2018-10-29 11:03:31.838 [http-nio-9002-exec-2] DEBUG c.p.b.dao.TPowerProductMapper.selectCountByExample.debug159 - <==      Total: 1
+2018-10-29 11:03:31.839 [http-nio-9002-exec-2] DEBUG c.p.b.d.TPowerProductMapper.queryPowerProductList.debug159 - ==>  Preparing: select * from t_power_product where type = ? order by create_time desc limit ?,? 
+2018-10-29 11:03:31.839 [http-nio-9002-exec-2] DEBUG c.p.b.d.TPowerProductMapper.queryPowerProductList.debug159 - ==> Parameters: Wireless charger(String), 0(Integer), 10(Integer)
+2018-10-29 11:03:31.856 [http-nio-9002-exec-2] DEBUG c.p.b.d.TPowerProductMapper.queryPowerProductList.debug159 - <==      Total: 9
+2018-10-29 11:03:31.857 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:31.858 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 1141779553(String)
+2018-10-29 11:03:31.864 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:31.866 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:31.866 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 1323764257(String)
+2018-10-29 11:03:31.877 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 9
+2018-10-29 11:03:31.878 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:31.879 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 1886636506(String)
+2018-10-29 11:03:31.892 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:31.893 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:31.894 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 2108873177(String)
+2018-10-29 11:03:31.901 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:31.902 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:31.903 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 5543562079(String)
+2018-10-29 11:03:31.917 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:31.918 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:31.918 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 6047396325(String)
+2018-10-29 11:03:31.937 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:31.939 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:31.939 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 9208671537(String)
+2018-10-29 11:03:31.956 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:31.958 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:31.959 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 9431131742(String)
+2018-10-29 11:03:31.968 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:31.970 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:31.970 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 6582116488(String)
+2018-10-29 11:03:31.979 [http-nio-9002-exec-2] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:35.958 [http-nio-9002-exec-3] INFO  com.power.bank.controller.ProductController.queryProduts46 - /query-power-products,ProductQueryDto=ProductQueryDto{type='Wireless charger', pageNum=1, pageSize=10, startRow=0, endRow=0}
+2018-10-29 11:03:35.965 [http-nio-9002-exec-3] DEBUG c.p.b.dao.TPowerProductMapper.selectCountByExample.debug159 - ==>  Preparing: SELECT COUNT(id) FROM t_power_product WHERE ( type = ? ) 
+2018-10-29 11:03:35.965 [http-nio-9002-exec-3] DEBUG c.p.b.dao.TPowerProductMapper.selectCountByExample.debug159 - ==> Parameters: Wireless charger(String)
+2018-10-29 11:03:35.971 [http-nio-9002-exec-3] DEBUG c.p.b.dao.TPowerProductMapper.selectCountByExample.debug159 - <==      Total: 1
+2018-10-29 11:03:35.972 [http-nio-9002-exec-3] DEBUG c.p.b.d.TPowerProductMapper.queryPowerProductList.debug159 - ==>  Preparing: select * from t_power_product where type = ? order by create_time desc limit ?,? 
+2018-10-29 11:03:35.972 [http-nio-9002-exec-3] DEBUG c.p.b.d.TPowerProductMapper.queryPowerProductList.debug159 - ==> Parameters: Wireless charger(String), 0(Integer), 10(Integer)
+2018-10-29 11:03:35.984 [http-nio-9002-exec-3] DEBUG c.p.b.d.TPowerProductMapper.queryPowerProductList.debug159 - <==      Total: 9
+2018-10-29 11:03:35.985 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:35.985 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 1141779553(String)
+2018-10-29 11:03:35.994 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:35.995 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:35.996 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 1323764257(String)
+2018-10-29 11:03:36.005 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 9
+2018-10-29 11:03:36.006 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:36.007 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 1886636506(String)
+2018-10-29 11:03:36.013 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:36.014 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:36.014 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 2108873177(String)
+2018-10-29 11:03:36.033 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:36.034 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:36.034 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 5543562079(String)
+2018-10-29 11:03:36.045 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:36.046 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:36.047 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 6047396325(String)
+2018-10-29 11:03:36.055 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:36.056 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:36.056 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 9208671537(String)
+2018-10-29 11:03:36.063 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:36.064 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:36.064 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 9431131742(String)
+2018-10-29 11:03:36.072 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:36.073 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,product_id,picture,type,create_time,update_time,remark,order_no FROM t_product_picture WHERE ( product_id = ? ) order by order_no ASC 
+2018-10-29 11:03:36.073 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - ==> Parameters: 6582116488(String)
+2018-10-29 11:03:36.080 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TProductPictureMapper.selectByExample.debug159 - <==      Total: 0
+2018-10-29 11:03:46.181 [http-nio-9002-exec-6] INFO  com.power.bank.controller.FaqController.quetyAll58 - /query-all
+2018-10-29 11:03:46.189 [http-nio-9002-exec-6] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==>  Preparing: SELECT id,title,status,create_time,update_time,content1,content2,content3,content4 FROM t_faq 
+2018-10-29 11:03:46.189 [http-nio-9002-exec-6] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==> Parameters: 
+2018-10-29 11:03:46.197 [http-nio-9002-exec-6] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - <==      Total: 8
+2018-10-29 11:04:07.220 [http-nio-9002-exec-9] INFO  com.power.bank.controller.FaqController.quetyAll58 - /query-all
+2018-10-29 11:04:07.231 [http-nio-9002-exec-9] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==>  Preparing: SELECT id,title,status,create_time,update_time,content1,content2,content3,content4 FROM t_faq 
+2018-10-29 11:04:07.231 [http-nio-9002-exec-9] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==> Parameters: 
+2018-10-29 11:04:07.243 [http-nio-9002-exec-9] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - <==      Total: 8
+2018-10-29 15:01:29.380 [main] INFO  com.power.bank.PowerBankApplication.logStarting50 - Starting PowerBankApplication on DESKTOP-ROAPLB0 with PID 20168 (C:\Users\15779\Desktop\power-bank\target\classes started by 15779 in C:\Users\15779\Desktop\power-bank)
+2018-10-29 15:01:29.384 [main] DEBUG com.power.bank.PowerBankApplication.logStarting53 - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-10-29 15:01:29.385 [main] INFO  com.power.bank.PowerBankApplication.logStartupProfileInfo666 - The following profiles are active: dev
+2018-10-29 15:01:29.444 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5aac4250: startup date [Mon Oct 29 15:01:29 CST 2018]; root of context hierarchy
+2018-10-29 15:01:30.061 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner.doScan166 - No MyBatis mapper was found in '[com.power.bank]' package. Please check your configuration.
+2018-10-29 15:01:30.092 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate.multipleStoresDetected163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-29 15:01:30.390 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8df885ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-29 15:01:30.715 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize91 - Tomcat initialized with port(s): 9002 (http)
+2018-10-29 15:01:30.729 [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log180 - Initializing ProtocolHandler ["http-nio-9002"]
+2018-10-29 15:01:30.737 [main] INFO  org.apache.catalina.core.StandardService.log180 - Starting service [Tomcat]
+2018-10-29 15:01:30.737 [main] INFO  org.apache.catalina.core.StandardEngine.log180 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-10-29 15:01:30.741 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener.log180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jdk1.8.0_144\jre\bin;D:\xiedishi\dev software\mysql\bin;D:\xiedishi\dev\nodejs\;D:\xiedishi\dev\Git\cmd;D:\xiedishi\dev\TortoiseGit\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\xiedishi\dev\SVN-SERVER\bin;D:\xiedishi\dev\VisualSVN Server\bin;D:\xiedishi\dev\python\python2.7;D:\xiedishi\dev\python\Scripts\;D:\xiedishi\dev\python\python2.7;C:\Users\15779\AppData\Local\Microsoft\WindowsApps;C:\Users\15779\AppData\Roaming\npm;D:\xiedishi\dev\Microsoft VS Code\bin;;.]
+2018-10-29 15:01:30.821 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log180 - Initializing Spring embedded WebApplicationContext
+2018-10-29 15:01:30.821 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader.prepareWebApplicationContext285 - Root WebApplicationContext: initialization completed in 1377 ms
+2018-10-29 15:01:30.876 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean.addRegistration187 - Servlet dispatcherServlet mapped to [/]
+2018-10-29 15:01:30.879 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-29 15:01:30.880 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-29 15:01:30.880 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-29 15:01:30.880 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-29 15:01:31.701 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-29 15:01:31.898 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5aac4250: startup date [Mon Oct 29 15:01:29 CST 2018]; root of context hierarchy
+2018-10-29 15:01:31.951 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/after-sale-policy/add-asp],methods=[POST]}" onto public java.lang.String com.power.bank.controller.AfterSalePolicyController.addAfterSalePolicy(com.power.bank.dto.AfterSalePolicyDto)
+2018-10-29 15:01:31.952 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/after-sale-policy/query-asp],methods=[POST]}" onto public java.lang.String com.power.bank.controller.AfterSalePolicyController.queryAsp()
+2018-10-29 15:01:31.952 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/faq/query-latest],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FaqController.quetyLatestList()
+2018-10-29 15:01:31.952 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/faq/add-faq],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FaqController.addFaq(com.power.bank.dto.FaqDto)
+2018-10-29 15:01:31.953 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/faq/query-all],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FaqController.quetyAll()
+2018-10-29 15:01:31.953 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/file/upload],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FileController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)
+2018-10-29 15:01:31.954 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/product/query-power-pro-detail],methods=[POST]}" onto public java.lang.String com.power.bank.controller.ProductController.queryPowerProductDetail(java.lang.String)
+2018-10-29 15:01:31.954 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/product/add-power-products],methods=[POST]}" onto public java.lang.String com.power.bank.controller.ProductController.addPowerProducts(com.power.bank.dto.PowerProductDto)
+2018-10-29 15:01:31.954 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/product/query-power-products],methods=[POST]}" onto public java.lang.String com.power.bank.controller.ProductController.queryProduts(com.power.bank.dto.ProductQueryDto)
+2018-10-29 15:01:31.955 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/temper/query-Temper-detail],methods=[POST]}" onto public java.lang.String com.power.bank.controller.TemperController.queryTemperDetail(java.lang.String)
+2018-10-29 15:01:31.955 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/temper/query-temper],methods=[POST]}" onto public java.lang.String com.power.bank.controller.TemperController.queryTemperList(com.power.bank.dto.QueryTemDto)
+2018-10-29 15:01:31.955 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/temper/add-temper],methods=[POST]}" onto public java.lang.String com.power.bank.controller.TemperController.addTemper(com.power.bank.dto.TemperDto)
+2018-10-29 15:01:31.958 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/register],methods=[POST]}" onto public java.lang.String com.power.bank.controller.UserController.register(com.power.bank.dto.RegisterDto)
+2018-10-29 15:01:31.958 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/add-or-update-wish-list],methods=[POST]}" onto public java.lang.String com.power.bank.controller.UserController.addOrUpdateWishList(com.power.bank.dto.WishListDto)
+2018-10-29 15:01:31.958 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/login],methods=[POST]}" onto public java.lang.String com.power.bank.controller.UserController.login(com.power.bank.dto.LoginDto,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-29 15:01:31.958 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/check-email-exist],methods=[GET]}" onto public java.lang.String com.power.bank.controller.UserController.checkEmailExust(java.lang.String)
+2018-10-29 15:01:31.959 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/logout]}" onto public java.lang.String com.power.bank.controller.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-29 15:01:31.961 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-29 15:01:31.961 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-29 15:01:31.985 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-29 15:01:31.985 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-29 15:01:32.500 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated433 - Registering beans for JMX exposure on startup
+2018-10-29 15:01:32.501 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-29 15:01:32.506 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-29 15:01:32.513 [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log180 - Starting ProtocolHandler ["http-nio-9002"]
+2018-10-29 15:01:32.520 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool.log180 - Using a shared selector for servlet write/read
+2018-10-29 15:01:32.533 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.start206 - Tomcat started on port(s): 9002 (http) with context path ''
+2018-10-29 15:01:32.536 [main] INFO  com.power.bank.PowerBankApplication.logStarted59 - Started PowerBankApplication in 3.57 seconds (JVM running for 4.263)
+2018-10-29 15:01:40.038 [http-nio-9002-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-29 15:01:40.038 [http-nio-9002-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-29 15:01:40.054 [http-nio-9002-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean509 - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-10-29 15:02:03.128 [http-nio-9002-exec-3] INFO  c.power.bank.controller.AfterSalePolicyController.addAfterSalePolicy34 - /add-asp,AfterSalePolicyDto=AfterSalePolicyDto{title='Return & Refund, 18-Months Warranty, Lifetime Technical Support', orderNo=1, content=[AfterSalePolicyDetailDto{content='For all purchases through BJD direct store, if there goes any kinds of malfunction, we provide 30-Days for Return & Refund, 18-Months Quality Warranty and Lifetime Technical Support.', orderNo=1}, AfterSalePolicyDetailDto{content='Return and Refund:<br>We guarantee all of our products against quality defects within the defined period (eg, 30 Days for US buyers, for specific warranty period please refer to related local laws), customers could apply for return and refund under the condition that items (including accessories) are qualified for second sale.Products with no quality-related issues can be returned within warranty period of receiving your order, however, you will be responsible for all shipping fees. For defect products, we will cover the shipping charge.', orderNo=2}, AfterSalePolicyDetailDto{content=' If a product is not specifically listed, the warranty period is 18 months. plus lifetime technical support.', orderNo=3}]}
+2018-10-29 15:02:03.144 [http-nio-9002-exec-3] INFO  com.zaxxer.hikari.HikariDataSource.getConnection110 - HikariPool-1 - Starting...
+2018-10-29 15:02:03.369 [http-nio-9002-exec-3] INFO  com.zaxxer.hikari.HikariDataSource.getConnection123 - HikariPool-1 - Start completed.
+2018-10-29 15:02:03.375 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM t_after_sale_policy WHERE id = ? 
+2018-10-29 15:02:03.391 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 15:02:03.408 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 15:02:03.410 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM t_after_sale_policy_detail WHERE id = ? 
+2018-10-29 15:02:03.411 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==> Parameters: 6777132002(String)
+2018-10-29 15:02:03.419 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 15:02:03.436 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==>  Preparing: INSERT INTO t_after_sale_policy_detail ( id,asp_id,order_no,create_time,update_time,status,remark,content ) VALUES( ?,?,?,?,?,?,?,? ) 
+2018-10-29 15:02:03.437 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==> Parameters: 6777132002(String), 6278366511(String), 1(Integer), 2018-10-29 15:02:03.419(Timestamp), null, 0(Integer), null, For all purchases through BJD direct store, if there goes any kinds of malfunction, we provide 30-Days for Return & Refund, 18-Months Quality Warranty and Lifetime Technical Support.(String)
+2018-10-29 15:02:03.454 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - <==    Updates: 1
+2018-10-29 15:02:03.455 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM t_after_sale_policy_detail WHERE id = ? 
+2018-10-29 15:02:03.456 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==> Parameters: 2968469473(String)
+2018-10-29 15:02:03.466 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 15:02:03.467 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==>  Preparing: INSERT INTO t_after_sale_policy_detail ( id,asp_id,order_no,create_time,update_time,status,remark,content ) VALUES( ?,?,?,?,?,?,?,? ) 
+2018-10-29 15:02:03.468 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==> Parameters: 2968469473(String), 6278366511(String), 2(Integer), 2018-10-29 15:02:03.467(Timestamp), null, 0(Integer), null, Return and Refund:<br>We guarantee all of our products against quality defects within the defined period (eg, 30 Days for US buyers, for specific warranty period please refer to related local laws), customers could apply for return and refund under the condition that items (including accessories) are qualified for second sale.Products with no quality-related issues can be returned within warranty period of receiving your order, however, you will be responsible for all shipping fees. For defect products, we will cover the shipping charge.(String)
+2018-10-29 15:02:03.487 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - <==    Updates: 1
+2018-10-29 15:02:03.487 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM t_after_sale_policy_detail WHERE id = ? 
+2018-10-29 15:02:03.488 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==> Parameters: 0208686905(String)
+2018-10-29 15:02:03.497 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 15:02:03.498 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==>  Preparing: INSERT INTO t_after_sale_policy_detail ( id,asp_id,order_no,create_time,update_time,status,remark,content ) VALUES( ?,?,?,?,?,?,?,? ) 
+2018-10-29 15:02:03.498 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==> Parameters: 0208686905(String), 6278366511(String), 3(Integer), 2018-10-29 15:02:03.498(Timestamp), null, 0(Integer), null, If a product is not specifically listed, the warranty period is 18 months. plus lifetime technical support.(String)
+2018-10-29 15:02:03.519 [http-nio-9002-exec-3] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - <==    Updates: 1
+2018-10-29 15:02:03.521 [http-nio-9002-exec-3] DEBUG com.power.bank.dao.TAfterSalePolicyMapper.insert.debug159 - ==>  Preparing: INSERT INTO t_after_sale_policy ( id,order_no,status,create_time,update_time,remark,title ) VALUES( ?,?,?,?,?,?,? ) 
+2018-10-29 15:02:03.522 [http-nio-9002-exec-3] DEBUG com.power.bank.dao.TAfterSalePolicyMapper.insert.debug159 - ==> Parameters: 6278366511(String), 1(Integer), 0(Integer), 2018-10-29 15:02:03.41(Timestamp), null, null, Return & Refund, 18-Months Warranty, Lifetime Technical Support(String)
+2018-10-29 15:02:03.543 [http-nio-9002-exec-3] DEBUG com.power.bank.dao.TAfterSalePolicyMapper.insert.debug159 - <==    Updates: 1
+2018-10-29 15:03:18.129 [http-nio-9002-exec-6] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 15:03:18.139 [http-nio-9002-exec-6] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy 
+2018-10-29 15:03:18.140 [http-nio-9002-exec-6] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==> Parameters: 
+2018-10-29 15:03:18.149 [http-nio-9002-exec-6] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - <==      Total: 1
+2018-10-29 15:03:18.165 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:03:18.165 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 15:03:18.176 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:22:16.295 [http-nio-9002-exec-10] INFO  c.power.bank.controller.AfterSalePolicyController.addAfterSalePolicy34 - /add-asp,AfterSalePolicyDto=AfterSalePolicyDto{title='For your own benefits, please mind the following information<br>For a smooth return and refund, quality warranty and technical support, please follow these steps', orderNo=2, content=[AfterSalePolicyDetailDto{content=' Please submit detail information of buyers account, or invoice', orderNo=1}, AfterSalePolicyDetailDto{content='Describe the malfunctions you had experienced', orderNo=2}, AfterSalePolicyDetailDto{content='Return, exchange and quality warranty are not compatible with the following conditions.<br>&nbsp;&nbsp;A. Products that had been artificially damaged, or undergone damage caused by mistake, abuse, wrong operation, inappropriate accessory connection, inappropriate operation and etc during course of using.<br>&nbsp;&nbsp;B .Products had been opened from the inside or repaired by unauthorized agencies.<br>&nbsp;&nbsp;C. Products that had been damaged by natural disasters such as earthquake, flood, hurricane and etc.<br>&nbsp;&nbspD. Products that exceeded our warranty period.<br>&nbsp;&nbsp;E. Proof of purchase such as Invoice lost, or without purchase proof.<br>&nbsp;&nbsp;F. Wrong proof of purchase, or tampered purchase proof.', orderNo=3}]}
+2018-10-29 15:22:16.305 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM t_after_sale_policy WHERE id = ? 
+2018-10-29 15:22:16.306 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 15:22:16.315 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 15:22:16.315 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM t_after_sale_policy_detail WHERE id = ? 
+2018-10-29 15:22:16.316 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==> Parameters: 5687700226(String)
+2018-10-29 15:22:16.323 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 15:22:16.324 [http-nio-9002-exec-10] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==>  Preparing: INSERT INTO t_after_sale_policy_detail ( id,asp_id,order_no,create_time,update_time,status,remark,content ) VALUES( ?,?,?,?,?,?,?,? ) 
+2018-10-29 15:22:16.324 [http-nio-9002-exec-10] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==> Parameters: 5687700226(String), 7139698081(String), 1(Integer), 2018-10-29 15:22:16.324(Timestamp), null, 0(Integer), null, Please submit detail information of buyers account, or invoice(String)
+2018-10-29 15:22:16.344 [http-nio-9002-exec-10] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - <==    Updates: 1
+2018-10-29 15:22:16.345 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM t_after_sale_policy_detail WHERE id = ? 
+2018-10-29 15:22:16.346 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==> Parameters: 9224971936(String)
+2018-10-29 15:22:16.355 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 15:22:16.357 [http-nio-9002-exec-10] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==>  Preparing: INSERT INTO t_after_sale_policy_detail ( id,asp_id,order_no,create_time,update_time,status,remark,content ) VALUES( ?,?,?,?,?,?,?,? ) 
+2018-10-29 15:22:16.357 [http-nio-9002-exec-10] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==> Parameters: 9224971936(String), 7139698081(String), 2(Integer), 2018-10-29 15:22:16.356(Timestamp), null, 0(Integer), null, Describe the malfunctions you had experienced(String)
+2018-10-29 15:22:16.380 [http-nio-9002-exec-10] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - <==    Updates: 1
+2018-10-29 15:22:16.381 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM t_after_sale_policy_detail WHERE id = ? 
+2018-10-29 15:22:16.382 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==> Parameters: 8597559091(String)
+2018-10-29 15:22:16.400 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 15:22:16.404 [http-nio-9002-exec-10] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==>  Preparing: INSERT INTO t_after_sale_policy_detail ( id,asp_id,order_no,create_time,update_time,status,remark,content ) VALUES( ?,?,?,?,?,?,?,? ) 
+2018-10-29 15:22:16.405 [http-nio-9002-exec-10] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==> Parameters: 8597559091(String), 7139698081(String), 3(Integer), 2018-10-29 15:22:16.401(Timestamp), null, 0(Integer), null, Return, exchange and quality warranty are not compatible with the following conditions.<br>&nbsp;&nbsp;A. Products that had been artificially damaged, or undergone damage caused by mistake, abuse, wrong operation, inappropriate accessory connection, inappropriate operation and etc during course of using.<br>&nbsp;&nbsp;B .Products had been opened from the inside or repaired by unauthorized agencies.<br>&nbsp;&nbsp;C. Products that had been damaged by natural disasters such as earthquake, flood, hurricane and etc.<br>&nbsp;&nbspD. Products that exceeded our warranty period.<br>&nbsp;&nbsp;E. Proof of purchase such as Invoice lost, or without purchase proof.<br>&nbsp;&nbsp;F. Wrong proof of purchase, or tampered purchase proof.(String)
+2018-10-29 15:22:16.423 [http-nio-9002-exec-10] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - <==    Updates: 1
+2018-10-29 15:22:16.424 [http-nio-9002-exec-10] DEBUG com.power.bank.dao.TAfterSalePolicyMapper.insert.debug159 - ==>  Preparing: INSERT INTO t_after_sale_policy ( id,order_no,status,create_time,update_time,remark,title ) VALUES( ?,?,?,?,?,?,? ) 
+2018-10-29 15:22:16.426 [http-nio-9002-exec-10] DEBUG com.power.bank.dao.TAfterSalePolicyMapper.insert.debug159 - ==> Parameters: 7139698081(String), 2(Integer), 0(Integer), 2018-10-29 15:22:16.315(Timestamp), null, null, For your own benefits, please mind the following information<br>For a smooth return and refund, quality warranty and technical support, please follow these steps(String)
+2018-10-29 15:22:16.443 [http-nio-9002-exec-10] DEBUG com.power.bank.dao.TAfterSalePolicyMapper.insert.debug159 - <==    Updates: 1
+2018-10-29 15:23:03.694 [http-nio-9002-exec-8] INFO  c.power.bank.controller.AfterSalePolicyController.addAfterSalePolicy34 - /add-asp,AfterSalePolicyDto=AfterSalePolicyDto{title='Cautions', orderNo=3, content=[AfterSalePolicyDetailDto{content='Products that had been artificially damaged, or undergone damage caused by mistake, abuse, wrong operation, inappropriate accessory connection, inappropriate operation and etc during course of using are exempt from our warranty policy. However, we still provides repair service for these items, only if buyers sign an Agreement for Special Repair Service first.', orderNo=1}, AfterSalePolicyDetailDto{content='Please note that cost cause by repairing and maintenance service mentioned above are on buyers' part.', orderNo=2}]}
+2018-10-29 15:23:03.700 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM t_after_sale_policy WHERE id = ? 
+2018-10-29 15:23:03.701 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 15:23:03.709 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 15:23:03.709 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM t_after_sale_policy_detail WHERE id = ? 
+2018-10-29 15:23:03.710 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==> Parameters: 8469534412(String)
+2018-10-29 15:23:03.719 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 15:23:03.719 [http-nio-9002-exec-8] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==>  Preparing: INSERT INTO t_after_sale_policy_detail ( id,asp_id,order_no,create_time,update_time,status,remark,content ) VALUES( ?,?,?,?,?,?,?,? ) 
+2018-10-29 15:23:03.720 [http-nio-9002-exec-8] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==> Parameters: 8469534412(String), 6601175391(String), 1(Integer), 2018-10-29 15:23:03.719(Timestamp), null, 0(Integer), null, Products that had been artificially damaged, or undergone damage caused by mistake, abuse, wrong operation, inappropriate accessory connection, inappropriate operation and etc during course of using are exempt from our warranty policy. However, we still provides repair service for these items, only if buyers sign an Agreement for Special Repair Service first.(String)
+2018-10-29 15:23:03.739 [http-nio-9002-exec-8] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - <==    Updates: 1
+2018-10-29 15:23:03.739 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==>  Preparing: SELECT CASE WHEN COUNT(id) > 0 THEN 1 ELSE 0 END AS result FROM t_after_sale_policy_detail WHERE id = ? 
+2018-10-29 15:23:03.740 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - ==> Parameters: 6111070259(String)
+2018-10-29 15:23:03.748 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.existsWithPrimaryKey.debug159 - <==      Total: 1
+2018-10-29 15:23:03.749 [http-nio-9002-exec-8] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==>  Preparing: INSERT INTO t_after_sale_policy_detail ( id,asp_id,order_no,create_time,update_time,status,remark,content ) VALUES( ?,?,?,?,?,?,?,? ) 
+2018-10-29 15:23:03.750 [http-nio-9002-exec-8] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - ==> Parameters: 6111070259(String), 6601175391(String), 2(Integer), 2018-10-29 15:23:03.749(Timestamp), null, 0(Integer), null, Please note that cost cause by repairing and maintenance service mentioned above are on buyers' part.(String)
+2018-10-29 15:23:03.772 [http-nio-9002-exec-8] DEBUG c.p.bank.dao.TAfterSalePolicyDetailMapper.insert.debug159 - <==    Updates: 1
+2018-10-29 15:23:03.773 [http-nio-9002-exec-8] DEBUG com.power.bank.dao.TAfterSalePolicyMapper.insert.debug159 - ==>  Preparing: INSERT INTO t_after_sale_policy ( id,order_no,status,create_time,update_time,remark,title ) VALUES( ?,?,?,?,?,?,? ) 
+2018-10-29 15:23:03.774 [http-nio-9002-exec-8] DEBUG com.power.bank.dao.TAfterSalePolicyMapper.insert.debug159 - ==> Parameters: 6601175391(String), 3(Integer), 0(Integer), 2018-10-29 15:23:03.709(Timestamp), null, null, Cautions(String)
+2018-10-29 15:23:03.792 [http-nio-9002-exec-8] DEBUG com.power.bank.dao.TAfterSalePolicyMapper.insert.debug159 - <==    Updates: 1
+2018-10-29 15:23:34.810 [http-nio-9002-exec-1] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 15:23:34.818 [http-nio-9002-exec-1] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy 
+2018-10-29 15:23:34.818 [http-nio-9002-exec-1] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==> Parameters: 
+2018-10-29 15:23:34.832 [http-nio-9002-exec-1] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - <==      Total: 3
+2018-10-29 15:23:34.834 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:23:34.834 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 15:23:34.846 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:23:34.847 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:23:34.847 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 15:23:34.857 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 15:23:34.858 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:23:34.859 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 15:23:34.868 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:27:00.892 [http-nio-9002-exec-4] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 15:27:00.901 [http-nio-9002-exec-4] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy 
+2018-10-29 15:27:00.901 [http-nio-9002-exec-4] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==> Parameters: 
+2018-10-29 15:27:00.911 [http-nio-9002-exec-4] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - <==      Total: 3
+2018-10-29 15:27:00.912 [http-nio-9002-exec-4] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:27:00.912 [http-nio-9002-exec-4] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 15:27:00.923 [http-nio-9002-exec-4] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:27:00.925 [http-nio-9002-exec-4] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:27:00.925 [http-nio-9002-exec-4] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 15:27:00.936 [http-nio-9002-exec-4] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 15:27:00.937 [http-nio-9002-exec-4] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:27:00.937 [http-nio-9002-exec-4] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 15:27:00.948 [http-nio-9002-exec-4] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:30:03.499 [http-nio-9002-exec-6] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 15:30:03.968 [http-nio-9002-exec-6] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy 
+2018-10-29 15:30:03.969 [http-nio-9002-exec-6] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==> Parameters: 
+2018-10-29 15:30:03.985 [http-nio-9002-exec-6] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - <==      Total: 3
+2018-10-29 15:30:03.991 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:30:03.992 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 15:30:04.009 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:30:04.014 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:30:04.014 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 15:30:04.031 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 15:30:04.033 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:30:04.034 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 15:30:04.050 [http-nio-9002-exec-6] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:34:38.123 [http-nio-9002-exec-9] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 15:34:38.130 [http-nio-9002-exec-9] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy 
+2018-10-29 15:34:38.130 [http-nio-9002-exec-9] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==> Parameters: 
+2018-10-29 15:34:38.138 [http-nio-9002-exec-9] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - <==      Total: 3
+2018-10-29 15:34:38.139 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:34:38.140 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 15:34:38.147 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:34:38.149 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:34:38.149 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 15:34:38.157 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 15:34:38.158 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:34:38.158 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 15:34:38.166 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:53:27.074 [http-nio-9002-exec-1] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 15:53:27.084 [http-nio-9002-exec-1] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy 
+2018-10-29 15:53:27.084 [http-nio-9002-exec-1] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - ==> Parameters: 
+2018-10-29 15:53:27.128 [http-nio-9002-exec-1] DEBUG c.power.bank.dao.TAfterSalePolicyMapper.selectAll.debug159 - <==      Total: 3
+2018-10-29 15:53:27.129 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:53:27.129 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 15:53:27.136 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:53:27.137 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:53:27.137 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 15:53:27.144 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 15:53:27.174 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:53:27.174 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 15:53:27.183 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:55:39.752 [main] INFO  com.power.bank.PowerBankApplication.logStarting50 - Starting PowerBankApplication on DESKTOP-ROAPLB0 with PID 19820 (C:\Users\15779\Desktop\power-bank\target\classes started by 15779 in C:\Users\15779\Desktop\power-bank)
+2018-10-29 15:55:39.755 [main] DEBUG com.power.bank.PowerBankApplication.logStarting53 - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-10-29 15:55:39.756 [main] INFO  com.power.bank.PowerBankApplication.logStartupProfileInfo666 - The following profiles are active: dev
+2018-10-29 15:55:39.832 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ca33c24: startup date [Mon Oct 29 15:55:39 CST 2018]; root of context hierarchy
+2018-10-29 15:55:40.591 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner.doScan166 - No MyBatis mapper was found in '[com.power.bank]' package. Please check your configuration.
+2018-10-29 15:55:40.625 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate.multipleStoresDetected163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-29 15:55:40.932 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3ec587f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-29 15:55:41.306 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize91 - Tomcat initialized with port(s): 9002 (http)
+2018-10-29 15:55:41.326 [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log180 - Initializing ProtocolHandler ["http-nio-9002"]
+2018-10-29 15:55:41.335 [main] INFO  org.apache.catalina.core.StandardService.log180 - Starting service [Tomcat]
+2018-10-29 15:55:41.335 [main] INFO  org.apache.catalina.core.StandardEngine.log180 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-10-29 15:55:41.339 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener.log180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jdk1.8.0_144\jre\bin;D:\xiedishi\dev software\mysql\bin;D:\xiedishi\dev\nodejs\;D:\xiedishi\dev\Git\cmd;D:\xiedishi\dev\TortoiseGit\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\xiedishi\dev\SVN-SERVER\bin;D:\xiedishi\dev\VisualSVN Server\bin;D:\xiedishi\dev\python\python2.7;D:\xiedishi\dev\python\Scripts\;D:\xiedishi\dev\python\python2.7;C:\Users\15779\AppData\Local\Microsoft\WindowsApps;C:\Users\15779\AppData\Roaming\npm;D:\xiedishi\dev\Microsoft VS Code\bin;;.]
+2018-10-29 15:55:41.430 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log180 - Initializing Spring embedded WebApplicationContext
+2018-10-29 15:55:41.431 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader.prepareWebApplicationContext285 - Root WebApplicationContext: initialization completed in 1598 ms
+2018-10-29 15:55:41.494 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean.addRegistration187 - Servlet dispatcherServlet mapped to [/]
+2018-10-29 15:55:41.499 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-29 15:55:41.500 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-29 15:55:41.500 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-29 15:55:41.500 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean.configure245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-29 15:55:42.384 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-29 15:55:42.592 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ca33c24: startup date [Mon Oct 29 15:55:39 CST 2018]; root of context hierarchy
+2018-10-29 15:55:42.644 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/after-sale-policy/query-asp],methods=[POST]}" onto public java.lang.String com.power.bank.controller.AfterSalePolicyController.queryAsp()
+2018-10-29 15:55:42.646 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/after-sale-policy/add-asp],methods=[POST]}" onto public java.lang.String com.power.bank.controller.AfterSalePolicyController.addAfterSalePolicy(com.power.bank.dto.AfterSalePolicyDto)
+2018-10-29 15:55:42.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/faq/query-latest],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FaqController.quetyLatestList()
+2018-10-29 15:55:42.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/faq/add-faq],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FaqController.addFaq(com.power.bank.dto.FaqDto)
+2018-10-29 15:55:42.648 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/faq/query-all],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FaqController.quetyAll()
+2018-10-29 15:55:42.648 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/file/upload],methods=[POST]}" onto public java.lang.String com.power.bank.controller.FileController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)
+2018-10-29 15:55:42.649 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/product/query-power-products],methods=[POST]}" onto public java.lang.String com.power.bank.controller.ProductController.queryProduts(com.power.bank.dto.ProductQueryDto)
+2018-10-29 15:55:42.649 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/product/add-power-products],methods=[POST]}" onto public java.lang.String com.power.bank.controller.ProductController.addPowerProducts(com.power.bank.dto.PowerProductDto)
+2018-10-29 15:55:42.649 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/product/query-power-pro-detail],methods=[POST]}" onto public java.lang.String com.power.bank.controller.ProductController.queryPowerProductDetail(java.lang.String)
+2018-10-29 15:55:42.650 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/temper/add-temper],methods=[POST]}" onto public java.lang.String com.power.bank.controller.TemperController.addTemper(com.power.bank.dto.TemperDto)
+2018-10-29 15:55:42.650 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/temper/query-temper],methods=[POST]}" onto public java.lang.String com.power.bank.controller.TemperController.queryTemperList(com.power.bank.dto.QueryTemDto)
+2018-10-29 15:55:42.651 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/temper/query-Temper-detail],methods=[POST]}" onto public java.lang.String com.power.bank.controller.TemperController.queryTemperDetail(java.lang.String)
+2018-10-29 15:55:42.653 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/register],methods=[POST]}" onto public java.lang.String com.power.bank.controller.UserController.register(com.power.bank.dto.RegisterDto)
+2018-10-29 15:55:42.654 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/login],methods=[POST]}" onto public java.lang.String com.power.bank.controller.UserController.login(com.power.bank.dto.LoginDto,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-29 15:55:42.654 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/check-email-exist],methods=[GET]}" onto public java.lang.String com.power.bank.controller.UserController.checkEmailExust(java.lang.String)
+2018-10-29 15:55:42.654 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/logout]}" onto public java.lang.String com.power.bank.controller.UserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-29 15:55:42.654 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/user/add-or-update-wish-list],methods=[POST]}" onto public java.lang.String com.power.bank.controller.UserController.addOrUpdateWishList(com.power.bank.dto.WishListDto)
+2018-10-29 15:55:42.656 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-29 15:55:42.657 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-29 15:55:42.682 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-29 15:55:42.682 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-29 15:55:43.227 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated433 - Registering beans for JMX exposure on startup
+2018-10-29 15:55:43.228 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-29 15:55:43.234 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance668 - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-29 15:55:43.242 [main] INFO  org.apache.coyote.http11.Http11NioProtocol.log180 - Starting ProtocolHandler ["http-nio-9002"]
+2018-10-29 15:55:43.249 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool.log180 - Using a shared selector for servlet write/read
+2018-10-29 15:55:43.261 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.start206 - Tomcat started on port(s): 9002 (http) with context path ''
+2018-10-29 15:55:43.264 [main] INFO  com.power.bank.PowerBankApplication.logStarted59 - Started PowerBankApplication in 3.902 seconds (JVM running for 4.607)
+2018-10-29 15:56:13.105 [http-nio-9002-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-29 15:56:13.105 [http-nio-9002-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-29 15:56:13.123 [http-nio-9002-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean509 - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-10-29 15:56:13.158 [http-nio-9002-exec-1] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 15:56:13.195 [http-nio-9002-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection110 - HikariPool-1 - Starting...
+2018-10-29 15:56:13.436 [http-nio-9002-exec-1] INFO  com.zaxxer.hikari.HikariDataSource.getConnection123 - HikariPool-1 - Start completed.
+2018-10-29 15:56:13.440 [http-nio-9002-exec-1] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy order by order_no ASC 
+2018-10-29 15:56:13.454 [http-nio-9002-exec-1] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==> Parameters: 
+2018-10-29 15:56:13.487 [http-nio-9002-exec-1] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:56:13.497 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:56:13.497 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 15:56:13.512 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:56:13.513 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:56:13.513 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 15:56:13.524 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:56:13.525 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:56:13.525 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 15:56:13.535 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 15:56:26.432 [http-nio-9002-exec-6] INFO  com.power.bank.controller.FaqController.quetyAll58 - /query-all
+2018-10-29 15:56:26.441 [http-nio-9002-exec-6] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==>  Preparing: SELECT id,title,status,create_time,update_time,content1,content2,content3,content4 FROM t_faq 
+2018-10-29 15:56:26.442 [http-nio-9002-exec-6] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==> Parameters: 
+2018-10-29 15:56:26.453 [http-nio-9002-exec-6] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - <==      Total: 8
+2018-10-29 15:57:07.505 [http-nio-9002-exec-5] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 15:57:07.513 [http-nio-9002-exec-5] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy order by order_no ASC 
+2018-10-29 15:57:07.513 [http-nio-9002-exec-5] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==> Parameters: 
+2018-10-29 15:57:07.523 [http-nio-9002-exec-5] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:57:07.524 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:57:07.525 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 15:57:07.536 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:57:07.537 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:57:07.537 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 15:57:07.550 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:57:07.551 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:57:07.551 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 15:57:07.561 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 15:57:47.155 [http-nio-9002-exec-8] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 15:57:47.170 [http-nio-9002-exec-8] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy order by order_no ASC 
+2018-10-29 15:57:47.171 [http-nio-9002-exec-8] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==> Parameters: 
+2018-10-29 15:57:47.185 [http-nio-9002-exec-8] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:57:47.187 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:57:47.187 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 15:57:47.204 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:57:47.206 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:57:47.207 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 15:57:47.219 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 15:57:47.220 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 15:57:47.221 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 15:57:47.232 [http-nio-9002-exec-8] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 16:02:21.755 [http-nio-9002-exec-10] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 16:02:22.742 [http-nio-9002-exec-10] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy order by order_no ASC 
+2018-10-29 16:02:22.742 [http-nio-9002-exec-10] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==> Parameters: 
+2018-10-29 16:02:22.757 [http-nio-9002-exec-10] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - <==      Total: 3
+2018-10-29 16:02:22.759 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 16:02:22.759 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 16:02:22.773 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 16:02:22.774 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 16:02:22.775 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 16:02:22.785 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 16:02:22.788 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 16:02:22.788 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 16:02:22.798 [http-nio-9002-exec-10] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 16:06:31.041 [http-nio-9002-exec-3] INFO  com.power.bank.controller.FaqController.quetyAll58 - /query-all
+2018-10-29 16:06:31.054 [http-nio-9002-exec-3] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==>  Preparing: SELECT id,title,status,create_time,update_time,content1,content2,content3,content4 FROM t_faq 
+2018-10-29 16:06:31.055 [http-nio-9002-exec-3] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==> Parameters: 
+2018-10-29 16:06:31.067 [http-nio-9002-exec-3] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - <==      Total: 8
+2018-10-29 16:06:38.251 [http-nio-9002-exec-6] INFO  com.power.bank.controller.FaqController.quetyAll58 - /query-all
+2018-10-29 16:06:38.262 [http-nio-9002-exec-6] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==>  Preparing: SELECT id,title,status,create_time,update_time,content1,content2,content3,content4 FROM t_faq 
+2018-10-29 16:06:38.262 [http-nio-9002-exec-6] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - ==> Parameters: 
+2018-10-29 16:06:38.275 [http-nio-9002-exec-6] DEBUG com.power.bank.dao.TFaqMapper.selectAll.debug159 - <==      Total: 8
+2018-10-29 16:06:40.726 [http-nio-9002-exec-5] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 16:06:40.736 [http-nio-9002-exec-5] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy order by order_no ASC 
+2018-10-29 16:06:40.737 [http-nio-9002-exec-5] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==> Parameters: 
+2018-10-29 16:06:40.746 [http-nio-9002-exec-5] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - <==      Total: 3
+2018-10-29 16:06:40.748 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 16:06:40.748 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 16:06:40.759 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 16:06:40.760 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 16:06:40.761 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 16:06:40.771 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 16:06:40.772 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 16:06:40.773 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 16:06:40.783 [http-nio-9002-exec-5] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 17:07:59.694 [http-nio-9002-exec-9] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 17:07:59.830 [http-nio-9002-exec-9] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy order by order_no ASC 
+2018-10-29 17:07:59.832 [http-nio-9002-exec-9] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==> Parameters: 
+2018-10-29 17:07:59.847 [http-nio-9002-exec-9] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - <==      Total: 3
+2018-10-29 17:07:59.851 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 17:07:59.851 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 17:07:59.869 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 17:07:59.871 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 17:07:59.871 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 17:07:59.886 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 17:07:59.888 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 17:07:59.888 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 17:07:59.898 [http-nio-9002-exec-9] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 17:10:09.781 [http-nio-9002-exec-1] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 17:10:09.790 [http-nio-9002-exec-1] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy order by order_no ASC 
+2018-10-29 17:10:09.791 [http-nio-9002-exec-1] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==> Parameters: 
+2018-10-29 17:10:09.800 [http-nio-9002-exec-1] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - <==      Total: 3
+2018-10-29 17:10:09.801 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 17:10:09.802 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 17:10:09.813 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 17:10:09.814 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 17:10:09.814 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 17:10:09.827 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 17:10:09.828 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 17:10:09.828 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 17:10:09.839 [http-nio-9002-exec-1] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2
+2018-10-29 17:13:21.435 [http-nio-9002-exec-3] INFO  c.power.bank.controller.AfterSalePolicyController.queryAsp52 - /query-asp
+2018-10-29 17:13:21.454 [http-nio-9002-exec-3] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==>  Preparing: SELECT id,order_no,status,create_time,update_time,remark,title FROM t_after_sale_policy order by order_no ASC 
+2018-10-29 17:13:21.454 [http-nio-9002-exec-3] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - ==> Parameters: 
+2018-10-29 17:13:21.468 [http-nio-9002-exec-3] DEBUG c.p.b.dao.TAfterSalePolicyMapper.selectByExample.debug159 - <==      Total: 3
+2018-10-29 17:13:21.470 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 17:13:21.470 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6278366511(String)
+2018-10-29 17:13:21.481 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 17:13:21.490 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 17:13:21.491 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 7139698081(String)
+2018-10-29 17:13:21.506 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 3
+2018-10-29 17:13:21.507 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.selectByExample.debug159 - ==>  Preparing: SELECT id,asp_id,order_no,create_time,update_time,status,remark,content FROM t_after_sale_policy_detail WHERE ( asp_id = ? ) order by order_no ASC 
+2018-10-29 17:13:21.508 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.selectByExample.debug159 - ==> Parameters: 6601175391(String)
+2018-10-29 17:13:21.521 [http-nio-9002-exec-3] DEBUG c.p.b.d.T.selectByExample.debug159 - <==      Total: 2

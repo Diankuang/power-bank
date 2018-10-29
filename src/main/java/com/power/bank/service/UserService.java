@@ -27,7 +27,7 @@ public class UserService {
 
     public String getUserId(){
         String uuid = ToolsUtil.getUUID();
-        if(tUserMapper.selectByPrimaryKey(uuid) != null){
+        if(tUserMapper.existsWithPrimaryKey(uuid)){
             return getUserId();
         }else {
             return uuid;

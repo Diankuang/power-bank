@@ -12,9 +12,9 @@ spring:
         host: 127.0.0.1
         timeout: 5000
   datasource:
-      url: jdbc:mysql://localhost:3306/hgl_tech?useUnicode=true&characterEncoding=UTF-8
+      url: jdbc:mysql://47.107.57.42:3306/hgl_tech?useUnicode=true&characterEncoding=UTF-8
       username: root
-      password: 1234
+      password: xds106287
       driver-class-name: com.mysql.jdbc.Driver
 
 

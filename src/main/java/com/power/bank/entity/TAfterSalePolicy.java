@@ -2,12 +2,16 @@ package com.power.bank.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 import javax.persistence.*;
 
 @Table(name = "t_after_sale_policy")
 public class TAfterSalePolicy implements Serializable {
     @Id
     private String id;
+
+    @Column(name = "order_no")
+    private Integer orderNo;
 
     /**
      * 0有效，1无效
@@ -23,6 +27,9 @@ public class TAfterSalePolicy implements Serializable {
     private String remark;
 
     private String title;
+
+    @Transient
+    private List<TAfterSalePolicyDetail> detail;
 
     private static final long serialVersionUID = 1L;
 
@@ -114,19 +121,33 @@ public class TAfterSalePolicy implements Serializable {
         this.title = title == null ? null : title.trim();
     }
 
+    public List<TAfterSalePolicyDetail> getDetail() {
+        return detail;
+    }
+
+    public void setDetail(List<TAfterSalePolicyDetail> detail) {
+        this.detail = detail;
+    }
+
+    public Integer getOrderNo() {
+        return orderNo;
+    }
+
+    public void setOrderNo(Integer orderNo) {
+        this.orderNo = orderNo;
+    }
+
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", status=").append(status);
-        sb.append(", createTime=").append(createTime);
-        sb.append(", updateTime=").append(updateTime);
-        sb.append(", remark=").append(remark);
-        sb.append(", title=").append(title);
-        sb.append("]");
-        return sb.toString();
+        return "TAfterSalePolicy{" +
+                "id='" + id + '\'' +
+                ", orderNo=" + orderNo +
+                ", status=" + status +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", remark='" + remark + '\'' +
+                ", title='" + title + '\'' +
+                ", detail=" + detail +
+                '}';
     }
 }

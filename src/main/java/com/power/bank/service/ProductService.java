@@ -31,7 +31,7 @@ public class ProductService {
 
     private String getPowerProId(){
         String uuid = ToolsUtil.getUUID();
-        if(tPowerProductMapper.selectByPrimaryKey(uuid) != null){
+        if(tPowerProductMapper.existsWithPrimaryKey(uuid)){
             return getPowerProId();
         }else{
             return uuid;
@@ -40,7 +40,7 @@ public class ProductService {
 
     private String getProPicId(){
         String uuid = ToolsUtil.getUUID();
-        if(tPowerProductMapper.selectByPrimaryKey(uuid)!=null){
+        if(tPowerProductMapper.existsWithPrimaryKey(uuid)){
             return getProPicId();
         }else {
             return uuid;

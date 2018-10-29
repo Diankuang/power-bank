@@ -30,7 +30,7 @@ public class TemperService {
 
     private String getTemId(){
         String uuid = ToolsUtil.getUUID();
-        if(tTemperMapper.selectByPrimaryKey(uuid) != null){
+        if(tTemperMapper.existsWithPrimaryKey(uuid)){
             return getTemId();
         }else{
             return uuid;
@@ -39,7 +39,7 @@ public class TemperService {
 
     private String getTemPicId(){
         String uuid = ToolsUtil.getUUID();
-        if(tTemperPictureMapper.selectByPrimaryKey(uuid)!=null){
+        if(tTemperPictureMapper.existsWithPrimaryKey(uuid)){
             return getTemPicId();
         }else{
             return uuid;

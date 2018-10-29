@@ -33,6 +33,7 @@ public class TProductPicture implements Serializable {
     /**
      * 图片排序
      */
+    @Column(name = "order_no")
     private Integer orderNo;
 
     private static final long serialVersionUID = 1L;
@@ -146,7 +147,7 @@ public class TProductPicture implements Serializable {
     /**
      * 获取图片排序
      *
-     * @return order - 图片排序
+     * @return order_no - 图片排序
      */
     public Integer getOrderNo() {
         return orderNo;

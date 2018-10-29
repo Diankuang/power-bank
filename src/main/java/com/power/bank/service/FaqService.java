@@ -19,7 +19,7 @@ public class FaqService {
 
     private String getFaqId(){
         String uuid = ToolsUtil.getUUID();
-        if(tFaqMapper.selectByPrimaryKey(uuid) != null){
+        if(tFaqMapper.existsWithPrimaryKey(uuid)){
             return getFaqId();
         }else{
             return uuid;
