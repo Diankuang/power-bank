@@ -39,6 +39,7 @@ public class FileController {
             File f = new File(fileName);
             file.transferTo(f);
             jsonObject.put("fileName",file.getOriginalFilename());
+            JsonResultHandler.handler(jsonObject,"0","Success");
         } catch (IOException e) {
             logger.info("系统异常,e={}",e.getMessage());
             JsonResultHandler.handler(jsonObject,"-9001","System Error");
