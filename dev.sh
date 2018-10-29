@@ -2,7 +2,7 @@
 cd `dirname $0`
 basepath=$(cd `dirname $0`; pwd)
 profile=$1
-port=8083
+port=9002
 
 pid=`ps -ef|grep "power-bank-0.0.1-SNAPSHOT.jar --server.port=${port}"|grep -v "grep"|awk -F ' ' '{print $2}'`
 kill $pid
