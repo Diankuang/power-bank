@@ -43,7 +43,7 @@ public class TNews implements Serializable {
     /**
      * 新闻内容
      */
-    private byte[] content;
+    private String content;
 
     private static final long serialVersionUID = 1L;
 
@@ -160,7 +160,7 @@ public class TNews implements Serializable {
      *
      * @return content - 新闻内容
      */
-    public byte[] getContent() {
+    public String getContent() {
         return content;
     }
 
@@ -169,8 +169,8 @@ public class TNews implements Serializable {
      *
      * @param content 新闻内容
      */
-    public void setContent(byte[] content) {
-        this.content = content;
+    public void setContent(String content) {
+        this.content = content == null ? null : content.trim();
     }
 
     @Override
