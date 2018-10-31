@@ -1,5 +1,6 @@
 package com.power.bank.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.power.bank.dto.LoginDto;
 import com.power.bank.dto.RegisterDto;
@@ -136,6 +137,23 @@ public class UserController {
         } catch (Exception e) {
             logger.info("e={}",e);
             JsonResultHandler.handler(jsonObject,"-9001","System Error!");
+        }
+        return jsonObject.toString();
+    }
+
+    @RequestMapping(value = "/subscribe-email",method = RequestMethod.POST)
+    public String subscribeEmail(String email){
+        logger.info("/subscribe-email,email={}",email);
+        JSONObject jsonObject = new JSONObject();
+        if(StringUtil.isEmpty(email)){
+            return JsonResultHandler.handler(jsonObject,"-1001","Email Address null");
+        }
+        try {
+            userService.subscribeEmail(email);
+            JsonResultHandler.handler(jsonObject,"0","Success");
+        } catch (Exception e) {
+            logger.info("System Error,e={}",e.getMessage());
+            JsonResultHandler.handler(jsonObject,"-9001","System Error");
         }
         return jsonObject.toString();
     }

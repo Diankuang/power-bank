@@ -1,11 +1,13 @@
 package com.power.bank.service;
 
 import com.alibaba.fastjson.JSONObject;
+import com.power.bank.dao.TEmailAddressMapper;
 import com.power.bank.dao.TUserMapper;
 import com.power.bank.dao.TWishListMapper;
 import com.power.bank.dto.LoginDto;
 import com.power.bank.dto.RegisterDto;
 import com.power.bank.dto.WishListDto;
+import com.power.bank.entity.TEmailAddress;
 import com.power.bank.entity.TUser;
 import com.power.bank.entity.TWishList;
 import com.power.bank.utils.JsonResultHandler;
@@ -25,13 +27,26 @@ public class UserService {
     @Autowired
     TWishListMapper tWishListMapper;
 
-    public String getUserId(){
+    @Autowired
+    TEmailAddressMapper tEmailAddressMapper;
+
+    private String getUserId(){
         String uuid = ToolsUtil.getUUID();
         if(tUserMapper.existsWithPrimaryKey(uuid)){
             return getUserId();
         }else {
             return uuid;
         }
+    }
+
+    private String getEmailId(){
+        String uuid = ToolsUtil.getUUID();
+        if(tEmailAddressMapper.existsWithPrimaryKey(uuid)){
+            return getEmailId();
+        }else {
+            return uuid;
+        }
+
     }
     /**
      * 查看email是否已经注册
@@ -104,5 +119,13 @@ public class UserService {
             newTWishList.setCreateTime(new Date());
             tWishListMapper.insert(newTWishList);
         }
+    }
+
+    public void subscribeEmail(String email){
+        TEmailAddress tEmailAddress = new TEmailAddress();
+        tEmailAddress.setCreateTime(new Date());
+        tEmailAddress.setId(getEmailId());
+        tEmailAddress.setEmailAddress(email);
+        tEmailAddressMapper.insert(tEmailAddress);
     }
 }
